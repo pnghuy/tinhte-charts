@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tinhte Chart</title>
+<style>
+  :root{
+    --bg:#111318;
+    --panel:#171A21;
+    --text:#F2F3F5;
+    --muted:#9AA0AA;
+    --track:rgba(255,255,255,.06);
+    --accent:#E53935;
+    --bar:#3A4150;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+  .chart-card{
+    max-width:760px;margin:0 auto;padding:28px 26px 22px;
+    background:var(--panel);border-radius:14px;
+    border:1px solid rgba(255,255,255,.05);
+  }
+  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:22px}
+  h1{font-size:clamp(17px,3.5vw,22px);font-weight:700;letter-spacing:-.01em}
+  .sub{font-size:13px;color:var(--muted);margin-top:4px}
+  .replay{
+    flex:none;background:none;border:1px solid rgba(255,255,255,.15);
+    color:var(--muted);font-size:12px;padding:6px 12px;border-radius:99px;
+    cursor:pointer;transition:.2s;
+  }
+  .replay:hover{color:var(--text);border-color:rgba(255,255,255,.4)}
+  .replay:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .row{display:grid;grid-template-columns:minmax(96px,26%) 1fr;gap:12px;align-items:center;padding:7px 0}
+  .name{font-size:13.5px;text-align:right;color:var(--muted);opacity:0;transform:translateX(-6px);transition:opacity .4s,transform .4s}
+  .row.hl .name{color:var(--text);font-weight:700}
+  .track{position:relative;height:30px;background:var(--track);border-radius:6px;overflow:visible}
+  .bar{
+    position:absolute;inset:0 auto 0 0;width:0;border-radius:6px;
+    background:var(--bar);
+    transition:width 1.1s cubic-bezier(.16,1,.3,1);
+  }
+  .row.hl .bar{background:var(--accent);box-shadow:0 0 18px rgba(229,57,53,.35)}
+  .val{
+    position:absolute;left:calc(var(--w) + 8px);top:50%;transform:translateY(-50%);
+    font-size:13.5px;font-variant-numeric:tabular-nums;color:var(--text);
+    opacity:0;transition:opacity .3s;white-space:nowrap;
+  }
+  .row.hl .val{font-weight:700}
+  .foot{margin-top:16px;display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
+
+  .played .name{opacity:1;transform:none}
+  .played .bar{width:var(--w)}
+  .played .val{opacity:1;transition-delay:.35s}
+
+  .err{max-width:760px;margin:20px auto;padding:16px;font-size:13px;color:#FFB4B0;
+       background:rgba(229,57,53,.08);border:1px solid rgba(229,57,53,.3);border-radius:10px}
+
+  @media (prefers-reduced-motion:reduce){
+    .bar,.name,.val{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="chart-card" id="card">
+  <div class="head">
+    <div>
+      <h1 id="title"></h1>
+      <div class="sub" id="subtitle"></div>
+    </div>
+    <button class="replay" id="replay" type="button">↻ Xem lại</button>
+  </div>
+  <div id="rows"></div>
+  <div class="foot">
+    <span id="unit"></span>
+    <span id="source"></span>
+  </div>
+</div>
+
+<script>
+/* Config mặc định — chỉ hiện khi mở file mà không có tham số ?d= */
+const FALLBACK = {
+  title: "Tinhte Chart — demo",
+  subtitle: "Truyền số liệu qua tham số ?d= trên URL",
+  unit: "Đơn vị: điểm",
+  source: "Nguồn: Tinhte.vn",
+  items: [
+    { name: "Mẫu A", value: 100, highlight: true },
+    { name: "Mẫu B", value: 80 },
+    { name: "Mẫu C", value: 60 }
+  ]
+};
+
+/* Giải mã base64url (hỗ trợ tiếng Việt/UTF-8) */
+function decodeConfig(b64){
+  const b = b64.replace(/-/g, "+").replace(/_/g, "/");
+  const bin = atob(b);
+  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+  return JSON.parse(new TextDecoder().decode(bytes));
+}
+
+let CONFIG = FALLBACK;
+const param = new URLSearchParams(location.search).get("d");
+if (param){
+  try { CONFIG = decodeConfig(param); }
+  catch(e){
+    document.body.insertAdjacentHTML("afterbegin",
+      '<div class="err">Không đọc được số liệu từ URL — kiểm tra lại tham số ?d= (phải là base64 của JSON). Đang hiển thị dữ liệu mẫu.</div>');
+  }
+}
+
+const card = document.getElementById("card");
+const rowsEl = document.getElementById("rows");
+document.getElementById("title").textContent = CONFIG.title || "";
+document.getElementById("subtitle").textContent = CONFIG.subtitle || "";
+document.getElementById("unit").textContent = CONFIG.unit || "";
+document.getElementById("source").textContent = CONFIG.source || "";
+document.title = CONFIG.title || "Tinhte Chart";
+
+/* Cho phép đổi màu nhấn qua config: {"accent":"#00A2FF"} */
+if (CONFIG.accent) document.documentElement.style.setProperty("--accent", CONFIG.accent);
+
+const items = CONFIG.items || [];
+const maxVal = Math.max(...items.map(i => i.value), 1);
+const countDuration = CONFIG.countDuration || 1100;
+const valEls = [];
+
+items.forEach((it, i) => {
+  const row = document.createElement("div");
+  row.className = "row" + (it.highlight ? " hl" : "");
+  const w = (it.value / (maxVal * 1.12) * 100).toFixed(2) + "%";
+  row.innerHTML = `
+    <div class="name" style="transition-delay:${i*0.12}s"></div>
+    <div class="track" style="--w:${w}">
+      <div class="bar" style="transition-delay:${i*0.12}s"></div>
+      <span class="val" style="transition-delay:${0.35 + i*0.12}s">0</span>
+    </div>`;
+  row.querySelector(".name").textContent = it.name; // textContent -> an toàn XSS
+  rowsEl.appendChild(row);
+  valEls.push({ el: row.querySelector(".val"), target: it.value, delay: i * 120 });
+});
+
+function fmt(n){
+  return Number.isInteger(CONFIG.decimals)
+    ? n.toLocaleString("vi-VN", {minimumFractionDigits: CONFIG.decimals, maximumFractionDigits: CONFIG.decimals})
+    : Math.round(n).toLocaleString("vi-VN");
+}
+
+function countUp(){
+  const t0 = performance.now();
+  function tick(now){
+    let done = true;
+    valEls.forEach(v => {
+      const t = Math.min(1, Math.max(0, (now - t0 - v.delay) / countDuration));
+      const eased = 1 - Math.pow(1 - t, 3);
+      v.el.textContent = fmt(v.target * eased);
+      if (t < 1) done = false;
+    });
+    if (!done) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+function play(){ card.classList.add("played"); countUp(); }
+function reset(){ card.classList.remove("played"); valEls.forEach(v => v.el.textContent = "0"); }
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting){
+      play();
+      if (!CONFIG.replayOnScroll) io.disconnect();
+      else if (!e.isIntersecting) reset();
+    } else if (CONFIG.replayOnScroll){
+      reset();
+    }
+  });
+}, { threshold: 0.4 });
+io.observe(card);
+
+document.getElementById("replay").addEventListener("click", () => {
+  reset();
+  requestAnimationFrame(() => requestAnimationFrame(play));
+});
+</script>
+</body>
+</html>
