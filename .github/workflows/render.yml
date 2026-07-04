@@ -1,0 +1,73 @@
+name: Render chart
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**.json"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Đường dẫn JSON (vd: data/2026-07-zephyrus-duo/pcmark10.json). Bỏ trống = render tất cả"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cài dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --quiet matplotlib numpy
+
+      - name: Xác định file cần render
+        run: |
+          if [ -n "${{ github.event.inputs.file }}" ]; then
+            echo "${{ github.event.inputs.file }}" > filelist.txt
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            find data -name '*.json' > filelist.txt
+          else
+            git diff --name-only HEAD^ HEAD -- 'data/**.json' 'data/*.json' > filelist.txt || true
+            if [ ! -s filelist.txt ]; then find data -name '*.json' > filelist.txt; fi
+          fi
+          echo "Sẽ render:"; cat filelist.txt
+
+      - name: Render video + tạo release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/chart.html
+        run: |
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            # data/2026-07-zephyrus-duo/pcmark10.json -> 2026-07-zephyrus-duo-pcmark10
+            name=$(echo "$f" | sed 's|^data/||; s|\.json$||; s|/|-|g')
+            echo "==> Render $name"
+            python3 render_chart.py "$f" "$name"
+            python3 make_embed.py "$f" "$BASE_URL" > notes.md
+
+            tag="chart-${name}-${{ github.run_number }}"
+            gh release create "$tag" \
+              "${name}_alpha.mov" \
+              "${name}_greenscreen.mp4" \
+              "${name}_preview.mp4" \
+              --title "Chart: ${name}" \
+              --notes-file notes.md
+
+            cat notes.md >> "$GITHUB_STEP_SUMMARY"
+            echo "---" >> "$GITHUB_STEP_SUMMARY"
+          done < filelist.txt
