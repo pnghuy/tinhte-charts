@@ -26,15 +26,14 @@ def main():
     iframe = (f'<iframe src="{url}" width="100%" height="{height}" '
               f'frameborder="0" loading="lazy" scrolling="no"></iframe>')
 
+   data_url = f"https://raw.githubusercontent.com/pnghuy/tinhte-charts/main/{cfg_path}"
     print(f"## {cfg.get('title', Path(cfg_path).stem)}\n")
-    print("**File video (tải ở phần Assets bên dưới):**")
-    print("- `_alpha.mov` — Premiere / Final Cut / DaVinci: kéo lên track trên, nền tự trong suốt")
-    print("- `_greenscreen.mp4` — CapCut: kéo lên layer trên, dùng Chroma Key chấm màu xanh")
-    print("- `_preview.mp4` — chỉ để xem thử\n")
-    print("**Link chart cho bài viết (dán vào BBCode):**")
-    print(f"```\n{url}\n```")
-    print("**Mã iframe (nếu chèn HTML trực tiếp):**")
-    print(f"```html\n{iframe}\n```")
+    print("**File video (Assets bên dưới):**")
+    print("- `_alpha.mov` — Premiere / DaVinci: kéo lên track trên, nền tự trong suốt")
+    print("- `_greenscreen.mp4` — CapCut: Chroma Key chấm màu xanh")
+    print("- `_preview.mp4` — xem thử\n")
+    print("**DATA_URL dán vào JSFiddle:**")
+    print(f"```\n{data_url}\n```")
 
 
 if __name__ == "__main__":
