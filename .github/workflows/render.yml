@@ -50,23 +50,32 @@ jobs:
       - name: Render video + tạo release
         env:
           GH_TOKEN: ${{ github.token }}
-          BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/chart.html
         run: |
-          while IFS= read -r -u3 f; do
-            [ -f "$f" ] || continue
-            name=$(echo "$f" | sed 's|^data/||; s|\.json$||; s|/|-|g')
-            echo "==> Render $name"
-            python3 render_chart.py "$f" "$name" < /dev/null
-            python3 make_embed.py "$f" "$BASE_URL" > notes.md
+          # Gom danh sách folder duy nhất từ các file cần render
+          while IFS= read -r f; do dirname "$f"; done < filelist.txt | sort -u > dirlist.txt
 
-            tag="chart-${name}-${{ github.run_number }}"
-            gh release create "$tag" \
-              "${name}_alpha.mov" \
-              "${name}_greenscreen.mp4" \
-              "${name}_preview.mp4" \
-              --title "Chart: ${name}" \
+          while IFS= read -r -u3 d; do
+            group=$(echo "$d" | sed 's|^data/*||; s|/|-|g')
+            [ -n "$group" ] || group="charts"
+            echo "==> Nhóm bài review: $group"
+            : > notes.md
+            assets=()
+
+            while IFS= read -r -u4 f; do
+              case "$f" in "$d"/*.json) ;; *) continue ;; esac
+              name=$(echo "$f" | sed 's|^data/||; s|\.json$||; s|/|-|g')
+              echo "==> Render $name"
+              python3 render_chart.py "$f" "$name" < /dev/null
+              python3 make_embed.py "$f" >> notes.md
+              echo "" >> notes.md
+              assets+=("${name}_alpha.mov" "${name}_greenscreen.mp4" "${name}_preview.mp4")
+            done 4< filelist.txt
+
+            [ ${#assets[@]} -gt 0 ] || continue
+            tag="review-${group}-${{ github.run_number }}"
+            gh release create "$tag" "${assets[@]}" \
+              --title "Review: ${group}" \
               --notes-file notes.md < /dev/null
-
             cat notes.md >> "$GITHUB_STEP_SUMMARY"
             echo "---" >> "$GITHUB_STEP_SUMMARY"
-          done 3< filelist.txt
+          done 3< dirlist.txt
