@@ -11,6 +11,6 @@
     { "name": "Zephyrus DUO (Ultra 9 386H)", "values": [3120, 9568], "highlight": true },
     { "name": "Zephyrus G16 (Ultra 9 386H)", "values": [3095, 9589] },
     { "name": "TUF A14 (Ryzen 7 350)",       "values": [2810, 7963] },
-    { "name": "Blade 16 (Ryzen AI 9 HX370)", "values": [2905, 8113] },
+    { "name": "Blade 16 (Ryzen AI 9 HX370)", "values": [2905, 8113] }
   ]
 }
