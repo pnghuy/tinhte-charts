@@ -1,0 +1,12 @@
+{
+  "title": "3DMark Time Spy",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "items": [
+    { "name": "RTX 5090 150W (Zephyrus DUO)", "value": 21435, "color": "#E53935", "highlight": true },
+    { "name": "Radeon 8060S (TUF A14)",      "value": 10200, "color": "#9E9E9E" }
+    { "name": "RTX 5090 160W (Zephyrus G16)",      "value": 22388, "color": "#9E9E9E" }
+    { "name": "RTX 5090 175W (Razer Blade 16)",      "value": 24833, "color": "#9E9E9E" }
+  ]
+}
