@@ -42,7 +42,7 @@ jobs:
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             find data -name '*.json' > filelist.txt
           else
-            git diff --name-only HEAD^ HEAD -- 'data/**.json' 'data/*.json' > filelist.txt || true
+            git diff --name-only --diff-filter=d HEAD^ HEAD -- 'data/**.json' 'data/*.json' > filelist.txt || true
             if [ ! -s filelist.txt ]; then find data -name '*.json' > filelist.txt; fi
           fi
           echo "Sẽ render:"; cat filelist.txt
@@ -63,6 +63,7 @@ jobs:
 
             while IFS= read -r -u4 f; do
               case "$f" in "$d"/*.json) ;; *) continue ;; esac
+              [ -f "$f" ] || continue
               name=$(echo "$f" | sed 's|^data/||; s|\.json$||; s|/|-|g')
               echo "==> Render $name"
               python3 render_chart.py "$f" "$name" < /dev/null
