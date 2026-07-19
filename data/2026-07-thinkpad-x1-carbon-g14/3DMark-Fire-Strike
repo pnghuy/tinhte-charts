@@ -3,9 +3,8 @@
   "unit": "điểm",
   "items": [
   { "name": "ThinkPad X1 Carbon Gen 14 (Ultra X7 368H)", "value": 8964, "color": "#E53935", "highlight": true },
-    { "name": "ExpertBook Ultra (Ultra X7 358H)",      "value": 12993, "color": "#9E9E9E" }
-    { "name": "DEll XPS 14 (Ultra X7 358H)",      "value": 12988, "color": "#9E9E9E" }
+    { "name": "ExpertBook Ultra (Ultra X7 358H)",      "value": 12993, "color": "#9E9E9E" },
+    { "name": "DEll XPS 14 (Ultra X7 358H)",      "value": 12988, "color": "#9E9E9E" },
     { "name": "ThinkPad T14 Gen 7 (Ultra X7 358H)",      "value": 12311, "color": "#9E9E9E" }
-
   ]
 }
