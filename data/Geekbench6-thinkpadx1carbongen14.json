@@ -1,0 +1,16 @@
+{
+  "title": "Geekbench 6",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "ThinkPad X1 Carbon Gen 14 (Ultra X7 368H)", "values": [2768, 12089], "highlight": true },
+    { "name": "ExpertBook Ultra (Ultra X7 358H)", "values": [2833, 16499] },
+    { "name": "DEll XPS 14 (Ultra X7 358H)",       "values": [2890, 16745] },
+    { "name": "ThinkPad T14 Gen 7 (Ultra X7 358H)", "values": [2700, 15687] }
+  ]
+}

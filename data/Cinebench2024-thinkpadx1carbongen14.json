@@ -1,0 +1,16 @@
+{
+  "title": "Cinebench 2024",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "ThinkPad X1 Carbon Gen 14 (Ultra X7 368H)", "values": [115, 845], "highlight": true },
+    { "name": "ExpertBook Ultra (Ultra X7 358H)", "values": [122, 1109] },
+    { "name": "DEll XPS 14 (Ultra X7 358H)",       "values": [123, 806] },
+    { "name": "ThinkPad T14 Gen 7 (Ultra X7 358H)", "values": [120, 889] }
+  ]
+}
