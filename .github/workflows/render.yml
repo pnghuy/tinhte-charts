@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       file:
-        description: "Đường dẫn JSON (vd: data/2026-07-zephyrus-duo/pcmark10.json). Bỏ trống = render tất cả"
+        description: "File hoặc folder trong data/ (vd: data/2026-07-thinkpad-x1-carbon-g14). Bỏ trống = render tất cả"
         required: false
         default: ""
 
@@ -37,8 +37,13 @@ jobs:
 
       - name: Xác định file cần render
         run: |
-          if [ -n "${{ github.event.inputs.file }}" ]; then
-            echo "${{ github.event.inputs.file }}" > filelist.txt
+          INPUT="${{ github.event.inputs.file }}"
+          if [ -n "$INPUT" ]; then
+            if [ -d "$INPUT" ]; then
+              find "$INPUT" -name '*.json' > filelist.txt   # input là folder -> lấy hết JSON trong đó
+            else
+              echo "$INPUT" > filelist.txt                  # input là 1 file
+            fi
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             find data -name '*.json' > filelist.txt
           else
