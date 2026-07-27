@@ -1,0 +1,15 @@
+{
+  "title": "Geekbench 6",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Strix SCAR 18 (Ultra 9 290HX Plus)", "values": [3198, 21965], "highlight": true },
+    { "name": "Strix SCAR 18 (Ultra 9 275HX)", "values": [3133, 21364] },
+    { "name": "Strix SCAR 18 (Core i9-14900HX)",       "values": [3043, 18721] }
+  ]
+}

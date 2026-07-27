@@ -1,0 +1,11 @@
+{
+  "title": "3DMark Time Spy",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+  "items": [
+    { "name": "Strix SCAR 18 (RTX 5090 175W)", "value": 24103, "color": "#E53935", "highlight": true },
+    { "name": "trix SCAR 18 (RTX 5090 175W)",      "value": 24100, "color": "#9E9E9E" },
+    { "name": "trix SCAR 18 (RTX 4090 175W)",      "value": 20495, "color": "#9E9E9E" }
+  ]
+}
