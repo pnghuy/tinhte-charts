@@ -8,8 +8,8 @@
   "seriesColors": ["#0088CC", "#6CBE45"],
 
   "items": [
-    { "name": "Strix SCAR 18 (Ultra 9 290HX Plus)", "values": [3198, 21965], "highlight": true },
-    { "name": "Strix SCAR 18 (Ultra 9 275HX)", "values": [3133, 21364] },
-    { "name": "Strix SCAR 18 (Core i9-14900HX)",       "values": [3043, 18721] }
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ Ultra 9 290HX Plus Processor)", "values": [3198, 21965], "highlight": true },
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ Ultra 9 275HX Processor)", "values": [3133, 21364] },
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ i9-14900HX Processor)",       "values": [3043, 18721] }
   ]
 }
