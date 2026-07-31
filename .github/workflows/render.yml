@@ -1,10 +1,6 @@
 name: Render chart
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "data/**.json"
   workflow_dispatch:
     inputs:
       file:
@@ -75,6 +71,9 @@ jobs:
               python3 make_embed.py "$f" >> notes.md
               echo "" >> notes.md
               assets+=("${name}_alpha.mov" "${name}_greenscreen.mp4" "${name}_preview.mp4")
+              [ -f "${name}_doc_alpha.mov" ] && assets+=("${name}_doc_alpha.mov")
+              [ -f "${name}_doc_greenscreen.mp4" ] && assets+=("${name}_doc_greenscreen.mp4")
+              [ -f "${name}.jpg" ] && assets+=("${name}.jpg")
             done 4< filelist.txt
 
             [ ${#assets[@]} -gt 0 ] || continue
