@@ -70,10 +70,15 @@ jobs:
               python3 render_chart.py "$f" "$name" < /dev/null
               python3 make_embed.py "$f" >> notes.md
               echo "" >> notes.md
-              assets+=("${name}_alpha.mov" "${name}_greenscreen.mp4" "${name}_preview.mp4")
-              [ -f "${name}_doc_alpha.mov" ] && assets+=("${name}_doc_alpha.mov")
-              [ -f "${name}_doc_greenscreen.mp4" ] && assets+=("${name}_doc_greenscreen.mp4")
-              [ -f "${name}.jpg" ] && assets+=("${name}.jpg")
+              # Gom hết file của chart này vào 1 zip
+              zip -j "${name}.zip" \
+                "${name}_alpha.mov" \
+                "${name}_greenscreen.mp4" \
+                "${name}_preview.mp4" \
+                "${name}.jpg" \
+                $([ -f "${name}_doc_alpha.mov" ] && echo "${name}_doc_alpha.mov") \
+                $([ -f "${name}_doc_greenscreen.mp4" ] && echo "${name}_doc_greenscreen.mp4")
+              assets+=("${name}.zip")
             done 4< filelist.txt
 
             [ ${#assets[@]} -gt 0 ] || continue
