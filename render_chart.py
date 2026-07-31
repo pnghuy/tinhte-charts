@@ -277,6 +277,81 @@ def render_portrait(cfg, grouped, series, s_colors, max_val, out_name):
                   alpha=True, preview=False, green=True)
 
 
+def render_still(cfg, grouped, series, s_colors, max_val, out_name):
+    """Ảnh JPG tĩnh 3:2 (2048x1536) — trạng thái cuối, các thanh đã đầy. Chèn vào bài viết."""
+    W, H = cfg.get("still_width", 2048), cfg.get("still_height", 1536)
+    items = cfg["items"]
+    n = len(items)
+    n_series = len(series) if grouped else 1
+    dpi = 100
+
+    fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
+    fig.patch.set_facecolor("#111318")
+
+    name_fs = 26
+    renderer = fig.canvas.get_renderer()
+    max_name_px = 0
+    for it in items:
+        txt = fig.text(0, 0, it["name"], fontsize=name_fs, fontweight="bold")
+        max_name_px = max(max_name_px, txt.get_window_extent(renderer=renderer).width)
+        txt.remove()
+    need_frac = (max_name_px + 60) / W
+    left_frac = min(0.45, max(0.20, need_frac))
+    if need_frac > 0.45:
+        name_fs = max(16, int(name_fs * 0.45 / need_frac))
+
+    ax = fig.add_axes([left_frac, 0.10, 0.90 - left_frac, 0.68 if grouped else 0.72])
+    ax.patch.set_alpha(0.0)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.set_xticks([]); ax.set_yticks([])
+    ax.set_xlim(0, max_val * 1.18)
+    ax.set_ylim(-0.6, n - 0.4)
+    ax.invert_yaxis()
+
+    fig.text(0.05, 0.90, cfg.get("title", ""), fontsize=46, fontweight="bold", color="white")
+    if cfg.get("subtitle"):
+        fig.text(0.05, 0.855, cfg["subtitle"], fontsize=23, color="#BBBBBB")
+
+    if grouped:
+        lx = left_frac
+        for si, sname in enumerate(series):
+            c = s_colors[si % len(s_colors)]
+            fig.patches.append(plt.Rectangle((lx, 0.815), 0.012, 0.020,
+                transform=fig.transFigure, facecolor=c, edgecolor="none"))
+            fig.text(lx + 0.020, 0.816, sname, fontsize=19, color="white", va="bottom")
+            lx += 0.020 + 0.011 * len(sname) + 0.03
+
+    group_h = 0.68
+    gap = 0.06
+    sub_h = (group_h - gap * (n_series - 1)) / n_series
+    for i, it in enumerate(items):
+        hl = it.get("highlight", False)
+        vals = it["values"] if grouped else [it["value"]]
+        for si, v in enumerate(vals):
+            color = (s_colors[si % len(s_colors)] if grouped
+                     else it.get("color", "#E53935" if hl else "#9E9E9E"))
+            y = i - group_h / 2 + sub_h / 2 + si * (sub_h + gap)
+            ax.barh(y, max_val * 1.05, height=sub_h, color="white", alpha=0.07)
+            ax.barh(y, v, height=sub_h, color=color,
+                    alpha=1.0 if (hl or grouped) else 0.85, zorder=3)
+            ax.text(v + max_val * 0.015, y, f"{v:,.0f}", va="center", ha="left",
+                    fontsize=20 if grouped else 28, fontweight="bold" if hl else "normal",
+                    color="white", zorder=4)
+        ax.text(-max_val * 0.02, i, it["name"], va="center", ha="right",
+                fontsize=name_fs, fontweight="bold" if hl else "normal", color="white")
+
+    if cfg.get("unit"):
+        fig.text(0.93, 0.05, cfg["unit"], fontsize=18, color="#888888", ha="right")
+    if cfg.get("source"):
+        fig.text(0.05, 0.05, cfg["source"], fontsize=15, color="#666666")
+
+    jpg = f"{out_name}.jpg"
+    fig.savefig(jpg, dpi=dpi, facecolor="#111318")
+    plt.close(fig)
+    return [jpg]
+
+
 def main():
     cfg_path = sys.argv[1] if len(sys.argv) > 1 else "chart_config.json"
     out_name = sys.argv[2] if len(sys.argv) > 2 else "chart"
@@ -285,6 +360,8 @@ def main():
     outs = render_landscape(cfg, grouped, series, s_colors, max_val, out_name)
     if cfg.get("portrait", True):
         outs += render_portrait(cfg, grouped, series, s_colors, max_val, out_name)
+    if cfg.get("still", True):
+        outs += render_still(cfg, grouped, series, s_colors, max_val, out_name)
     print("Done: " + ", ".join(outs))
 
 
