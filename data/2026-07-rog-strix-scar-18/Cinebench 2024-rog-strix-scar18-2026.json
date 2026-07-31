@@ -1,0 +1,15 @@
+{
+  "title": "Cinebench 2024",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ Ultra 9 processor 290HX Plus)", "values": [140, 2366], "highlight": true },
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ Ultra 9 processor 275HX)", "values": [137, 2067] },
+    { "name": "Strix SCAR 18 (Intel ®  Core ™ i9 processor 14900HX)",       "values": [130, 1999] }
+  ]
+}
