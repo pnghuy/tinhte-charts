@@ -1,1 +1,11 @@
-
+{
+  "title": "3DMark Time Spy",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+  "items": [
+    { "name": "Acer Nitro ProPanel (RTX 3050)", "value": 5020, "color": "#E53935", "highlight": true },
+    { "name": "Acer Nitro ProPanel (RTX 4050)",      "value": 8233, "color": "#9E9E9E" },
+    { "name": "Acer Nitro ProPanel (RTX 5050)",      "value": 8901, "color": "#9E9E9E" }
+  ]
+}
