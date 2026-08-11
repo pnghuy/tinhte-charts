@@ -1,0 +1,11 @@
+{
+  "title": "Cyberpunk 2077 1080p low settings + Frame Gen 2x",
+  "subtitle": "Số càng cao càng tốt, riêng RTX 3050 không hỗ trợ",
+  "unit": "FPS",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+  "items": [
+    { "name": "Acer Nitro ProPanel (RTX 3050 65W)", "value": 68, "color": "#E53935", "highlight": true },
+    { "name": "Acer Nitro ProPanel (RTX 4050 75W)",      "value": 120, "color": "#9E9E9E" },
+    { "name": "Acer Nitro ProPanel (RTX 5050 75W)",      "value": 135, "color": "#9E9E9E" }
+  ]
+}
