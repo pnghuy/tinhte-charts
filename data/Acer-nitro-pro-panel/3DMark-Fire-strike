@@ -1,0 +1,11 @@
+{
+  "title": "3DMark Fire Strike",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+  "items": [
+    { "name": "Acer Nitro ProPanel (RTX 3050 65W)", "value": 10790, "color": "#E53935", "highlight": true },
+    { "name": "Acer Nitro ProPanel (RTX 4050 75W)",      "value": 14534, "color": "#9E9E9E" },
+    { "name": "Acer Nitro ProPanel (RTX 5050 75W)",      "value": 20647, "color": "#9E9E9E" }
+  ]
+}
