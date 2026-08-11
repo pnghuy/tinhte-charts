@@ -1,7 +1,7 @@
 {
   "title": "Cyberpunk 2077 1080p low settings",
   "subtitle": "Số càng cao càng tốt",
-  "unit": "điểm",
+  "unit": "FPS",
   "source": "Nguồn: Tinhte.vn đo thực tế",
   "items": [
     { "name": "Acer Nitro ProPanel (RTX 3050 65W)", "value": 68, "color": "#E53935", "highlight": true },
