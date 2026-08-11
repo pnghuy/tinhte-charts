@@ -1,0 +1,14 @@
+{
+  "title": "Cinebench 2024",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Acer Nitro ProPanel (Intel Core 7 240H)", "values": [110, 833], "highlight": true },
+    { "name": "Acer Nitro ProPanel (Intel Core i5-13420H)",       "values": [97, 520] }
+  ]
+}
