@@ -1,0 +1,11 @@
+{
+  "title": "3DMark Steel Nomad Light",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "items": [
+    { "name": "Adreno X2-90 (Zenbook A16)", "value": 4450, "color": "#E53935", "highlight": true },
+    { "name": "Intel Arc B390 (ExpertBook Ultra)",      "value": 6095, "color": "#9E9E9E" },
+    { "name": "Radeon 890M (Vivobook S14)",      "value": 6244, "color": "#9E9E9E" }
+  ]
+}
