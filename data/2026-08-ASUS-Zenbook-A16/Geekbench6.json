@@ -1,0 +1,16 @@
+{
+  "title": "Geekbench 6",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Zenbook A16 (Snapdragon X2 Elite Extreme)", "values": [3759, 22751], "highlight": true },
+    { "name": "ExpertBook Ultra (Intel Core Ultra X7 358H)", "values": [2825, 16506] },
+    { "name": "Zenbook A14 (Snapdragon X2 Elite)",       "values": [3531, 19703] },
+    { "name": "Vivobook S 15 (Snapdragon X Elite)", "values": [2905, 13299] }
+  ]
+}
