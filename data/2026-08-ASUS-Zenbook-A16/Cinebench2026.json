@@ -1,0 +1,16 @@
+{
+  "title": "Cinebench R26",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+   { "name": "Zenbook A16 (Snapdragon X2 Elite Extreme)", "values": [620, 6935], "highlight": true },
+    { "name": "ExpertBook Ultra (Intel Core Ultra X7 358H)", "values": [504, 4533] },
+    { "name": "Zenbook A14 (Snapdragon X2 Elite)",       "values": [520, 4621] },
+    { "name": "Vivobook S 15 (Snapdragon X Elite)", "values": [466, 4099] }
+  ]
+}
