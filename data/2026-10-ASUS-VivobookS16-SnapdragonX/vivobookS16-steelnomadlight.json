@@ -1,0 +1,15 @@
+{
+  "title": "3DMark Steel Nomad Light",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Overall Score"],
+  "seriesColors": ["#FF8C00"],
+
+  "items": [
+    { "name": "ASUS Vivobook S16 (Snapdragon X)", "values": [1750], "highlight": true },
+    { "name": "ASUS Zenbook 14 (Core Ultra 5 125H)", "values": [2610] },
+    { "name": "ASUS Zenbook 14 (Ryzen 7 8840U)", "values": [2760] }
+  ]
+}
