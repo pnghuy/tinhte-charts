@@ -1,0 +1,15 @@
+{
+  "title": "Cinebench 2024",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Single-core", "Multi-core"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "ASUS Vivobook S16 (Snapdragon X)", "values": [88, 640], "highlight": true },
+    { "name": "ASUS Zenbook 14 (Core Ultra 5 125H)", "values": [101, 685] },
+    { "name": "ASUS Zenbook 14 (Ryzen 7 8840U)", "values": [104, 725] }
+  ]
+}
