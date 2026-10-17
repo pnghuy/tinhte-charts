@@ -1,0 +1,17 @@
+{
+  "title": "Procyon Battery Life",
+  "subtitle": "Thời gian sáng màn hình (phút), càng lâu càng tốt",
+  "unit": "phút",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Thời lượng pin"],
+  "seriesColors": ["#1E9A4A"],
+
+  "items": [
+    { "name": "HP OmniBook X Flip 14 (Ultra 5 325)", "values": [586], "highlight": true },
+    { "name": "MacBook Neo", "values": [757] },
+    { "name": "MacBook Air (M5)", "values": [718] },
+    { "name": "Zenbook S 14 (Core Ultra X7)", "values": [565] },
+    { "name": "Zenbook DUO 2026 (Ultra 9 386H)", "values": [489] }
+  ]
+}
