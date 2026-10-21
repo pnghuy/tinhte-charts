@@ -31,6 +31,7 @@ Repo làm chart benchmark cho bài review Tinh tế. Schema JSON, cách render v
 - Đặt placeholder `[Ảnh: <ten-output>.jpg]` đúng chỗ cần biểu đồ trong bài, rồi gửi kèm file JPG.
 
 ## Khi chạy làm bot Telegram (chartbot)
+- **BẮT BUỘC:** mọi tin nhắn đến từ kênh Telegram (`<channel source="...telegram...">`) phải được trả lời bằng tool `reply` của plugin telegram, kèm đúng `chat_id` của tin đến. Chữ in ra terminal người dùng KHÔNG thấy. Gửi ảnh JPG cũng dùng `reply`, đính kèm đường dẫn file.
 - Trước mỗi việc mới: `git pull --rebase origin main`.
 - Người dùng gửi số liệu → tạo JSON → render `--still-only` → gửi JPG qua Telegram để duyệt.
 - Chỉ commit + push khi người dùng duyệt ("ok", "đẩy lên"…). Commit message ghi tên máy và bài test.
