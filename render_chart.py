@@ -353,9 +353,17 @@ def render_still(cfg, grouped, series, s_colors, max_val, out_name):
 
 
 def main():
-    cfg_path = sys.argv[1] if len(sys.argv) > 1 else "chart_config.json"
-    out_name = sys.argv[2] if len(sys.argv) > 2 else "chart"
+    # --still-only: chỉ xuất ảnh JPG (vài giây), bỏ qua toàn bộ video
+    still_only = "--still-only" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--still-only"]
+    cfg_path = args[0] if len(args) > 0 else "chart_config.json"
+    out_name = args[1] if len(args) > 1 else "chart"
     cfg, grouped, series, s_colors, max_val = load_cfg(cfg_path)
+
+    if still_only:
+        outs = render_still(cfg, grouped, series, s_colors, max_val, out_name)
+        print("Done: " + ", ".join(outs))
+        return
 
     outs = render_landscape(cfg, grouped, series, s_colors, max_val, out_name)
     if cfg.get("portrait", True):
