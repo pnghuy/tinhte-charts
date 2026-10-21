@@ -30,5 +30,12 @@ Repo làm chart benchmark cho bài review Tinh tế. Schema JSON, cách render v
 ## Khi viết bài có chart
 - Đặt placeholder `[Ảnh: <ten-output>.jpg]` đúng chỗ cần biểu đồ trong bài, rồi gửi kèm file JPG.
 
+## Khi chạy làm bot Telegram (chartbot)
+- Trước mỗi việc mới: `git pull --rebase origin main`.
+- Người dùng gửi số liệu → tạo JSON → render `--still-only` → gửi JPG qua Telegram để duyệt.
+- Chỉ commit + push khi người dùng duyệt ("ok", "đẩy lên"…). Commit message ghi tên máy và bài test.
+- Chỉ chạy `gh workflow run` khi người dùng bảo render video, chạy xong gửi link trang Releases.
+- Không đụng vào file ngoài `data/` trừ khi được bảo rõ.
+
 ## Khi gặp lỗi
 - JSON hoặc render lỗi thì báo lại cho người dùng, không tự thử sửa quá 2 lần.
