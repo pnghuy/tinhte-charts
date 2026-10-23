@@ -1,0 +1,66 @@
+{
+  "title": "Geekbench 6",
+  "subtitle": "Chế độ hiệu năng cao nhất · Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo Zenbook 14 UX3480AA; máy so sánh: số liệu tham khảo",
+  "series": [
+    "Đơn nhân",
+    "Đa nhân"
+  ],
+  "seriesColors": [
+    "#0088CC",
+    "#6CBE45"
+  ],
+  "items": [
+    {
+      "name": "Zenbook 14 (Ultra 9 386H)",
+      "values": [
+        2812,
+        15062
+      ],
+      "highlight": true
+    },
+    {
+      "name": "Zenbook 14 (Ultra 7 255H)",
+      "values": [
+        2605,
+        12887
+      ]
+    },
+    {
+      "name": "Zenbook 14 (Ryzen AI 7 350)",
+      "values": [
+        2796,
+        12440
+      ]
+    },
+    {
+      "name": "Zenbook 14 (Ultra 7 155H)",
+      "values": [
+        2451,
+        12360
+      ]
+    },
+    {
+      "name": "Zenbook 14 (Ryzen 7 8840HS)",
+      "values": [
+        2509,
+        11738
+      ]
+    },
+    {
+      "name": "Zenbook S 14 (Ultra 7 258V)",
+      "values": [
+        2689,
+        11118
+      ]
+    },
+    {
+      "name": "Zenbook DUO (Ultra 9 285H)",
+      "values": [
+        2964,
+        15950
+      ]
+    }
+  ]
+}

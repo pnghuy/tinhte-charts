@@ -1,0 +1,30 @@
+{
+  "title": "3DMark Time Spy",
+  "subtitle": "GPU tích hợp · Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo Zenbook 14 UX3480AA; máy so sánh: số liệu tham khảo",
+  "items": [
+    {
+      "name": "Core Ultra 9 386H (Zenbook 14)",
+      "value": 4733,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "Ryzen AI 9 HX 370 (35W)",
+      "value": 4253
+    },
+    {
+      "name": "Core Ultra 7 258V (30W)",
+      "value": 4342
+    },
+    {
+      "name": "Core Ultra 7 155H (55W)",
+      "value": 3782
+    },
+    {
+      "name": "Core Ultra 5 125H (50W)",
+      "value": 3546
+    }
+  ]
+}

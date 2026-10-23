@@ -1,0 +1,38 @@
+{
+  "title": "3DMark Wild Life Extreme",
+  "subtitle": "GPU tích hợp · Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo Zenbook 14 UX3480AA; máy so sánh: số liệu tham khảo",
+  "items": [
+    {
+      "name": "Zenbook 14 (Intel Graphics 4 Xe3 – 386H)",
+      "value": 2899,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "Zenbook 14 (Arc 140T – 255H)",
+      "value": 5279
+    },
+    {
+      "name": "Zenbook 14 (Radeon 860M – AI 7 350)",
+      "value": 2698
+    },
+    {
+      "name": "Zenbook 14 (Intel Arc – 155H)",
+      "value": 6443
+    },
+    {
+      "name": "Zenbook 14 (Radeon 780M – 8840HS)",
+      "value": 5551
+    },
+    {
+      "name": "Zenbook S 14 (Arc 140V – 258V)",
+      "value": 7443
+    },
+    {
+      "name": "Zenbook DUO (Arc 140T – 285H)",
+      "value": 7260
+    }
+  ]
+}

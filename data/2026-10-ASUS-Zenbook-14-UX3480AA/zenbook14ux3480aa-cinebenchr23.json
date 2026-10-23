@@ -1,0 +1,52 @@
+{
+  "title": "Cinebench R23",
+  "subtitle": "Chế độ hiệu năng cao nhất · Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo Zenbook 14 UX3480AA; máy so sánh: số liệu tham khảo",
+  "series": [
+    "Đơn nhân",
+    "Đa nhân"
+  ],
+  "seriesColors": [
+    "#0088CC",
+    "#6CBE45"
+  ],
+  "items": [
+    {
+      "name": "Core Ultra 9 386H (Zenbook 14, 40W)",
+      "values": [
+        2103,
+        17626
+      ],
+      "highlight": true
+    },
+    {
+      "name": "Ryzen AI 9 HX 370 (35W)",
+      "values": [
+        1733,
+        16985
+      ]
+    },
+    {
+      "name": "Core Ultra 7 258V (30W)",
+      "values": [
+        1810,
+        11268
+      ]
+    },
+    {
+      "name": "Core Ultra 7 155H (55W)",
+      "values": [
+        1698,
+        11675
+      ]
+    },
+    {
+      "name": "Core Ultra 5 125H (50W)",
+      "values": [
+        1553,
+        11884
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Cinebench 2026",
+  "subtitle": "Chế độ hiệu năng cao nhất · Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo Zenbook 14 UX3480AA; máy so sánh: số liệu tham khảo",
+  "series": [
+    "Đơn nhân",
+    "Đa nhân"
+  ],
+  "seriesColors": [
+    "#0088CC",
+    "#6CBE45"
+  ],
+  "items": [
+    {
+      "name": "Core Ultra 9 386H (Zenbook 14)",
+      "values": [
+        389,
+        3973
+      ],
+      "highlight": true
+    },
+    {
+      "name": "Core Ultra X9 388H (Intel công bố)",
+      "values": [
+        541,
+        4722
+      ]
+    },
+    {
+      "name": "Core Ultra X9 388H (Tinhte đo)",
+      "values": [
+        502,
+        4733
+      ]
+    }
+  ]
+}
