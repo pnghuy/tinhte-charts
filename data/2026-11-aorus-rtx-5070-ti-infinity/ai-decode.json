@@ -1,0 +1,45 @@
+{
+  "title": "AI Local — Tốc độ Decode",
+  "subtitle": "Sinh token · càng cao càng tốt",
+  "unit": "token/s",
+  "source": "Nguồn: Hardware Corner (llama.cpp CUDA, context 4K)",
+  "series": [
+    "Qwen3 8B (Q4_K_M)",
+    "Qwen3 14B (Q4_K_M)"
+  ],
+  "seriesColors": [
+    "#0088CC",
+    "#6CBE45"
+  ],
+  "items": [
+    {
+      "name": "RTX 5070 Ti 16GB (AORUS INFINITY)",
+      "values": [
+        121,
+        74
+      ],
+      "highlight": true
+    },
+    {
+      "name": "GeForce RTX 5080 16GB",
+      "values": [
+        129,
+        81
+      ]
+    },
+    {
+      "name": "GeForce RTX 5070 12GB",
+      "values": [
+        86,
+        54
+      ]
+    },
+    {
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "values": [
+        69,
+        41
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "AI Local — Prefill theo model trên RTX 5070 Ti",
+  "subtitle": "Xử lý prompt trên RTX 5070 Ti 16 GB, llama.cpp CUDA, càng cao càng tốt",
+  "unit": "token/s",
+  "source": "Nguồn: trung bình từ llama.cpp GitHub, Hardware Corner, llamabench.ai, LlamaPerf, NInfer field report",
+  "items": [
+    { "name": "Gemma 4 12B (Q4)",              "value": 4317, "color": "#0088CC" },
+    { "name": "Qwen3 14B (Q4_K_M)",            "value": 3265, "color": "#0088CC" },
+    { "name": "gpt-oss-20b (MXFP4)",           "value": 6259, "color": "#0088CC" },
+    { "name": "Gemma 4 26B-A4B (IQ4_XS/Q4_0)", "value": 5139, "color": "#0088CC" },
+    { "name": "Qwen3.8 27B (IQ3_S)",           "value": 1288, "color": "#0088CC" }
+  ]
+}

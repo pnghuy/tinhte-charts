@@ -1,0 +1,26 @@
+{
+  "title": "3DMark Port Royal",
+  "subtitle": "Ray Tracing (1440p) · điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: trung bình từ Profesional Review, GetGeek.ro, PCEkspert, Bug.hr, Gamereactor, Worthplaying, GPU-Monkey, HardwareCooking, LanOC",
+  "items": [
+    {
+      "name": "AORUS RTX 5070 Ti INFINITY 16G",
+      "value": 20497,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "GeForce RTX 5080 16GB",
+      "value": 22224
+    },
+    {
+      "name": "GeForce RTX 5070 12GB",
+      "value": 14323
+    },
+    {
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "value": 10147
+    }
+  ]
+}

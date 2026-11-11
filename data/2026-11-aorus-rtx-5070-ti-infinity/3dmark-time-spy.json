@@ -1,0 +1,26 @@
+{
+  "title": "3DMark Time Spy",
+  "subtitle": "Graphics score (DX12, 1440p) · điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: trung bình từ Profesional Review, MegaObzor, Wccftech, Notebookcheck, GPU-Monkey, HardwareCooking",
+  "items": [
+    {
+      "name": "AORUS RTX 5070 Ti INFINITY 16G",
+      "value": 28166,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "GeForce RTX 5080 16GB",
+      "value": 32650
+    },
+    {
+      "name": "GeForce RTX 5070 12GB",
+      "value": 22520
+    },
+    {
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "value": 15566
+    }
+  ]
+}

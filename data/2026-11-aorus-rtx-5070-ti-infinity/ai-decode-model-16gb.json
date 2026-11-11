@@ -1,0 +1,13 @@
+{
+  "title": "AI Local — Decode theo model trên RTX 5070 Ti",
+  "subtitle": "Sinh token trên RTX 5070 Ti 16 GB, llama.cpp CUDA, càng cao càng tốt",
+  "unit": "token/s",
+  "source": "Nguồn: trung bình từ llama.cpp GitHub, Hardware Corner, llamabench.ai, LlamaPerf, Google AI Forum, llm-bench.io",
+  "items": [
+    { "name": "Gemma 4 12B (Q4)",              "value": 88,  "color": "#6CBE45" },
+    { "name": "Qwen3 14B (Q4_K_M)",            "value": 74,  "color": "#6CBE45" },
+    { "name": "gpt-oss-20b (MXFP4)",           "value": 173, "color": "#6CBE45" },
+    { "name": "Gemma 4 26B-A4B (IQ4_XS/Q4_0)", "value": 137, "color": "#6CBE45" },
+    { "name": "Qwen3.8 27B (IQ3_S)",           "value": 49,  "color": "#6CBE45" }
+  ]
+}

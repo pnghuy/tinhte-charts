@@ -1,0 +1,26 @@
+{
+  "title": "3DMark Fire Strike",
+  "subtitle": "Graphics score (DX11, 1080p) · điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: trung bình từ Profesional Review, Notebookcheck, HardwareCooking",
+  "items": [
+    {
+      "name": "AORUS RTX 5070 Ti INFINITY 16G",
+      "value": 67084,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "GeForce RTX 5080 16GB",
+      "value": 72960
+    },
+    {
+      "name": "GeForce RTX 5070 12GB",
+      "value": 57926
+    },
+    {
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "value": 41770
+    }
+  ]
+}
