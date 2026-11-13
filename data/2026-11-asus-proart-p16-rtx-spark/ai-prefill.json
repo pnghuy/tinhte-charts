@@ -1,0 +1,24 @@
+{
+  "title": "AI Local — Tốc độ Prefill",
+  "subtitle": "Qwen3.8 27B · xử lý prompt · càng cao càng tốt",
+  "unit": "token/s",
+  "source": "tinhte.vn",
+  "items": [
+    {
+      "name": "ASUS ProArt P16 (RTX Spark N1X)",
+      "value": 870,
+      "highlight": true,
+      "color": "#0088CC"
+    },
+    {
+      "name": "NVIDIA DGX Spark (GB10)",
+      "value": 839,
+      "color": "#9E9E9E"
+    },
+    {
+      "name": "Ryzen AI Max+ 395 (Radeon 8060S)",
+      "value": 292,
+      "color": "#9E9E9E"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "AI Local — Tốc độ Decode",
+  "subtitle": "Sinh token, không bật MTP · càng cao càng tốt",
+  "unit": "token/s",
+  "source": "tinhte.vn",
+  "series": [
+    "Qwen3.8 27B",
+    "Qwen3.6 35B-A3B"
+  ],
+  "seriesColors": [
+    "#0088CC",
+    "#6CBE45"
+  ],
+  "items": [
+    {
+      "name": "ASUS ProArt P16 (RTX Spark N1X)",
+      "values": [
+        15,
+        84
+      ],
+      "highlight": true
+    },
+    {
+      "name": "NVIDIA DGX Spark (GB10)",
+      "values": [
+        11,
+        61
+      ]
+    },
+    {
+      "name": "Ryzen AI Max+ 395 (Radeon 8060S)",
+      "values": [
+        13,
+        65
+      ]
+    }
+  ]
+}

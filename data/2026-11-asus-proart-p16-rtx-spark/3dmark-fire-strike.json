@@ -1,0 +1,26 @@
+{
+  "title": "3DMark Fire Strike",
+  "subtitle": "Graphics score (DX11, 1080p) · điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "tinhte.vn",
+  "items": [
+    {
+      "name": "ASUS ProArt P16 (RTX Spark N1X)",
+      "value": 27406,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "GeForce RTX 5070 Laptop",
+      "value": 35555
+    },
+    {
+      "name": "Ryzen AI Max+ 395 (Radeon 8060S)",
+      "value": 27470
+    },
+    {
+      "name": "Core Ultra X7 358H (Arc B390)",
+      "value": 17025
+    }
+  ]
+}

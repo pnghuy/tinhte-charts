@@ -1,0 +1,26 @@
+{
+  "title": "3DMark Time Spy",
+  "subtitle": "Graphics score (DX12, 1440p) · điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "tinhte.vn",
+  "items": [
+    {
+      "name": "ASUS ProArt P16 (RTX Spark N1X)",
+      "value": 12364,
+      "highlight": true,
+      "color": "#E53935"
+    },
+    {
+      "name": "GeForce RTX 5070 Laptop",
+      "value": 13171
+    },
+    {
+      "name": "Ryzen AI Max+ 395 (Radeon 8060S)",
+      "value": 10244
+    },
+    {
+      "name": "Core Ultra X7 358H (Arc B390)",
+      "value": 6792
+    }
+  ]
+}
