@@ -1,0 +1,17 @@
+{
+  "title": "Geekbench 6",
+  "subtitle": "Điểm tham khảo, càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Nitro ANV16 (Core 5 205H) theo Notebookcheck / Geekbench Browser; X1 Carbon: Tinhte.vn đo; Zenbook 14: số liệu tham khảo",
+
+  "series": ["Đơn nhân", "Đa nhân"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Nitro ProPanel ANV16 (Core 5 205H)", "values": [2449, 9426], "highlight": true },
+    { "name": "Zenbook 14 (Ultra 7 255H)", "values": [2605, 12887] },
+    { "name": "Zenbook 14 (Ultra 7 155H)", "values": [2451, 12360] },
+    { "name": "ThinkPad X1 Carbon Gen 14 (Ultra X7 368H)", "values": [2768, 12089] },
+    { "name": "Zenbook 14 (Ryzen 7 8840HS)", "values": [2509, 11738] }
+  ]
+}

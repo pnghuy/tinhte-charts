@@ -1,0 +1,17 @@
+{
+  "title": "Geekbench 7",
+  "subtitle": "Điểm tham khảo, càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Nitro ANV16 (Core 5 205H) theo Notebookcheck; máy so sánh: Tinhte.vn đo, đa nhân OmniBook X Flip 14 theo Geekbench Browser",
+
+  "series": ["Đơn nhân", "Đa nhân"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Nitro ProPanel ANV16 (Core 5 205H)", "values": [2171, 9356], "highlight": true },
+    { "name": "HP OmniBook X Flip 14 (Ultra 5 325)", "values": [2033, 10967] },
+    { "name": "Zenbook 14 (Ryzen 7 8840U)", "values": [2290, 10350] },
+    { "name": "Zenbook 14 (Core Ultra 5 125H)", "values": [2180, 9250] },
+    { "name": "Vivobook S16 (Snapdragon X)", "values": [1655, 8768] }
+  ]
+}
