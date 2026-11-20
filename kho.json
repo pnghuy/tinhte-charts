@@ -1,0 +1,1140 @@
+{
+ "version": 1,
+ "updated": "2026-11-20",
+ "note": "Kho máy so sánh của Tinhte Chart Studio. Chart Studio đọc/ghi file này qua GitHub. Sửa tay thì giữ đúng format.",
+ "tests": {
+  "ai-local-decode-qwen3-8-27b-qwen3-6-35b": {
+   "cat": "gpu",
+   "series": [
+    "Qwen3.8 27B",
+    "Qwen3.6 35B-A3B"
+   ],
+   "sub": "Sinh token, không bật MTP · càng cao càng tốt",
+   "title": "AI Local — Tốc độ Decode (Qwen3.8 27B / Qwen3.6 35B-A3B)",
+   "unit": "token/s"
+  },
+  "ai-local-prefill-qwen3-8-27b": {
+   "cat": "gpu",
+   "series": null,
+   "sub": "Qwen3.8 27B · xử lý prompt · càng cao càng tốt",
+   "title": "AI Local — Tốc độ Prefill (Qwen3.8 27B)",
+   "unit": "token/s"
+  },
+  "ai-local-toc-do-decode": {
+   "cat": "gpu",
+   "series": [
+    "Qwen3 8B (Q4_K_M)",
+    "Qwen3 14B (Q4_K_M)"
+   ],
+   "sub": "Sinh token · càng cao càng tốt",
+   "title": "AI Local — Tốc độ Decode",
+   "unit": "token/s"
+  },
+  "ai-local-toc-do-prefill": {
+   "cat": "gpu",
+   "series": [
+    "Qwen3 8B (Q4_K_M)",
+    "Qwen3 14B (Q4_K_M)"
+   ],
+   "sub": "Xử lý prompt · càng cao càng tốt",
+   "title": "AI Local — Tốc độ Prefill",
+   "unit": "token/s"
+  },
+  "cyberpunk-2077-1080p-low-settings": {
+   "cat": "gpu",
+   "series": null,
+   "sub": "Số càng cao càng tốt",
+   "title": "Cyberpunk 2077 1080p low settings",
+   "unit": "FPS"
+  },
+  "cyberpunk-2077-1080p-low-settings-frame-gen-2x": {
+   "cat": "gpu",
+   "series": null,
+   "sub": "Số càng cao càng tốt, riêng RTX 3050 không hỗ trợ",
+   "title": "Cyberpunk 2077 1080p low settings + Frame Gen 2x",
+   "unit": "FPS"
+  },
+  "pcmark-10-applications": {
+   "cat": "cpu",
+   "series": null,
+   "sub": "Điểm càng cao càng tốt",
+   "title": "PCMark 10 Applications",
+   "unit": "điểm"
+  }
+ },
+ "devices": {
+  "acer-nitro-propanel-core-7-240h-laptop": {
+   "cpu": "Core 7 240H",
+   "gpu": "",
+   "measured": true,
+   "name": "Acer Nitro ProPanel",
+   "scores": {
+    "cinebench-2024": [
+     110,
+     833
+    ]
+   },
+   "type": "laptop"
+  },
+  "acer-nitro-propanel-core-i5-13420h-laptop": {
+   "cpu": "Core i5-13420H",
+   "gpu": "",
+   "measured": true,
+   "name": "Acer Nitro ProPanel",
+   "scores": {
+    "cinebench-2024": [
+     97,
+     520
+    ]
+   },
+   "type": "laptop"
+  },
+  "acer-nitro-propanel-rtx-3050-65w-laptop": {
+   "cpu": "",
+   "gpu": "RTX 3050 65W",
+   "measured": true,
+   "name": "Acer Nitro ProPanel",
+   "scores": {
+    "3dmark-fire-strike": [
+     10790
+    ],
+    "3dmark-time-spy": [
+     5020
+    ],
+    "cyberpunk-2077-1080p-low-settings": [
+     68
+    ],
+    "cyberpunk-2077-1080p-low-settings-frame-gen-2x": [
+     68
+    ]
+   },
+   "type": "laptop"
+  },
+  "acer-nitro-propanel-rtx-4050-75w-laptop": {
+   "cpu": "",
+   "gpu": "RTX 4050 75W",
+   "measured": true,
+   "name": "Acer Nitro ProPanel",
+   "scores": {
+    "3dmark-fire-strike": [
+     14534
+    ],
+    "3dmark-time-spy": [
+     8233
+    ],
+    "cyberpunk-2077-1080p-low-settings": [
+     83
+    ],
+    "cyberpunk-2077-1080p-low-settings-frame-gen-2x": [
+     120
+    ]
+   },
+   "type": "laptop"
+  },
+  "acer-nitro-propanel-rtx-5050-75w-laptop": {
+   "cpu": "",
+   "gpu": "RTX 5050 75W",
+   "measured": true,
+   "name": "Acer Nitro ProPanel",
+   "scores": {
+    "3dmark-fire-strike": [
+     20647
+    ],
+    "3dmark-time-spy": [
+     8901
+    ],
+    "cyberpunk-2077-1080p-low-settings": [
+     92
+    ],
+    "cyberpunk-2077-1080p-low-settings-frame-gen-2x": [
+     135
+    ]
+   },
+   "type": "laptop"
+  },
+  "aorus-rtx-5070-ti-infinity-16g-gpu-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "AORUS RTX 5070 Ti INFINITY 16G",
+   "scores": {
+    "3dmark-fire-strike": [
+     67084
+    ],
+    "3dmark-port-royal": [
+     20497
+    ],
+    "3dmark-time-spy": [
+     28166
+    ],
+    "ai-local-toc-do-decode": [
+     121,
+     74
+    ],
+    "ai-local-toc-do-prefill": [
+     5557,
+     3265
+    ]
+   },
+   "type": "gpu"
+  },
+  "asus-proart-p16-rtx-spark-n1x-laptop-ref": {
+   "name": "ASUS ProArt P16",
+   "cpu": "RTX Spark N1X",
+   "gpu": "RTX Spark N1X",
+   "type": "laptop",
+   "measured": false,
+   "scores": {
+    "3dmark-time-spy": [
+     12364
+    ],
+    "3dmark-fire-strike": [
+     27406
+    ],
+    "3dmark-port-royal": [
+     8870
+    ],
+    "ai-local-decode-qwen3-8-27b-qwen3-6-35b": [
+     15,
+     84
+    ],
+    "ai-local-prefill-qwen3-8-27b": [
+     870
+    ]
+   }
+  },
+  "asus-vivobook-s16-snapdragon-x-laptop": {
+   "cpu": "Snapdragon X",
+   "gpu": "",
+   "measured": true,
+   "name": "ASUS Vivobook S16",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     1750
+    ],
+    "cinebench-2024": [
+     88,
+     640
+    ],
+    "cinebench-2026": [
+     1090,
+     8150
+    ],
+    "geekbench-7": [
+     1655,
+     8768
+    ],
+    "pcmark-10-applications": [
+     11450
+    ]
+   },
+   "type": "laptop"
+  },
+  "asus-zenbook-14-core-ultra-5-125h-laptop": {
+   "cpu": "Core Ultra 5 125H",
+   "gpu": "",
+   "measured": true,
+   "name": "ASUS Zenbook 14",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     2610
+    ],
+    "cinebench-2024": [
+     101,
+     685
+    ],
+    "cinebench-2026": [
+     1265,
+     8720
+    ],
+    "geekbench-7": [
+     2180,
+     9250
+    ],
+    "pcmark-10-applications": [
+     12300
+    ]
+   },
+   "type": "laptop"
+  },
+  "asus-zenbook-14-ryzen-7-8840u-laptop": {
+   "cpu": "Ryzen 7 8840U",
+   "gpu": "",
+   "measured": true,
+   "name": "ASUS Zenbook 14",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     2760
+    ],
+    "cinebench-2024": [
+     104,
+     725
+    ],
+    "cinebench-2026": [
+     1310,
+     9300
+    ],
+    "geekbench-7": [
+     2290,
+     10350
+    ],
+    "pcmark-10-applications": [
+     12850
+    ]
+   },
+   "type": "laptop"
+  },
+  "core-ultra-5-125h-50w-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Core Ultra 5 125H (50W)",
+   "scores": {
+    "3dmark-time-spy": [
+     3546
+    ],
+    "cinebench-r23": [
+     1553,
+     11884
+    ]
+   },
+   "type": "laptop"
+  },
+  "core-ultra-7-155h-55w-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Core Ultra 7 155H (55W)",
+   "scores": {
+    "3dmark-time-spy": [
+     3782
+    ],
+    "cinebench-r23": [
+     1698,
+     11675
+    ]
+   },
+   "type": "laptop"
+  },
+  "core-ultra-7-258v-30w-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Core Ultra 7 258V (30W)",
+   "scores": {
+    "3dmark-time-spy": [
+     4342
+    ],
+    "cinebench-r23": [
+     1810,
+     11268
+    ]
+   },
+   "type": "laptop"
+  },
+  "core-ultra-x7-358h-arc-b390-laptop-ref": {
+   "name": "Core Ultra X7 358H",
+   "cpu": "Core Ultra X7 358H",
+   "gpu": "Arc B390",
+   "type": "laptop",
+   "measured": false,
+   "scores": {
+    "3dmark-time-spy": [
+     6792
+    ],
+    "3dmark-fire-strike": [
+     17025
+    ],
+    "3dmark-port-royal": [
+     3980
+    ]
+   }
+  },
+  "core-ultra-x9-388h-intel-cong-bo-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Core Ultra X9 388H (Intel công bố)",
+   "scores": {
+    "cinebench-2024": [
+     132,
+     1157
+    ],
+    "cinebench-2026": [
+     541,
+     4722
+    ]
+   },
+   "type": "laptop"
+  },
+  "core-ultra-x9-388h-tinhte-do-laptop": {
+   "cpu": "",
+   "gpu": "",
+   "measured": true,
+   "name": "Core Ultra X9 388H (Tinhte đo)",
+   "scores": {
+    "cinebench-2024": [
+     121,
+     1153
+    ],
+    "cinebench-2026": [
+     502,
+     4733
+    ]
+   },
+   "type": "laptop"
+  },
+  "crosshair-16-max-hx-core-ultra-9-290hx-plus-laptop": {
+   "cpu": "Core Ultra 9 290HX Plus",
+   "gpu": "",
+   "measured": true,
+   "name": "Crosshair 16 Max HX",
+   "scores": {
+    "geekbench-6": [
+     3200,
+     21700
+    ]
+   },
+   "type": "laptop"
+  },
+  "dell-xps-14-ultra-x7-358h-laptop": {
+   "cpu": "Ultra X7 358H",
+   "gpu": "",
+   "measured": true,
+   "name": "Dell XPS 14",
+   "scores": {
+    "3dmark-fire-strike": [
+     12988
+    ],
+    "3dmark-time-spy": [
+     6507
+    ],
+    "cinebench-2024": [
+     123,
+     806
+    ],
+    "geekbench-6": [
+     2890,
+     16745
+    ]
+   },
+   "type": "laptop"
+  },
+  "expertbook-ultra-ultra-x7-358h-intel-arc-b390-laptop": {
+   "cpu": "Ultra X7 358H",
+   "gpu": "Intel Arc B390",
+   "measured": true,
+   "name": "ExpertBook Ultra",
+   "scores": {
+    "3dmark-fire-strike": [
+     12993
+    ],
+    "3dmark-steel-nomad-light": [
+     6095
+    ],
+    "3dmark-time-spy": [
+     6722
+    ],
+    "cinebench-2024": [
+     122,
+     1109
+    ],
+    "cinebench-2026": [
+     504,
+     4533
+    ],
+    "geekbench-6": [
+     2825,
+     16506
+    ]
+   },
+   "type": "laptop"
+  },
+  "geforce-rtx-5060-ti-16gb-gpu-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "GeForce RTX 5060 Ti 16GB",
+   "scores": {
+    "3dmark-fire-strike": [
+     41770
+    ],
+    "3dmark-port-royal": [
+     10147
+    ],
+    "3dmark-time-spy": [
+     15566
+    ],
+    "ai-local-toc-do-decode": [
+     69,
+     41
+    ],
+    "ai-local-toc-do-prefill": [
+     2965,
+     1743
+    ]
+   },
+   "type": "gpu"
+  },
+  "geforce-rtx-5070-12gb-gpu-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "GeForce RTX 5070 12GB",
+   "scores": {
+    "3dmark-fire-strike": [
+     57926
+    ],
+    "3dmark-port-royal": [
+     14323
+    ],
+    "3dmark-time-spy": [
+     22520
+    ],
+    "ai-local-toc-do-decode": [
+     86,
+     54
+    ],
+    "ai-local-toc-do-prefill": [
+     3488,
+     2144
+    ]
+   },
+   "type": "gpu"
+  },
+  "geforce-rtx-5070-laptop-laptop-ref": {
+   "name": "GeForce RTX 5070 Laptop",
+   "cpu": "",
+   "gpu": "",
+   "type": "laptop",
+   "measured": false,
+   "scores": {
+    "3dmark-time-spy": [
+     13171
+    ],
+    "3dmark-fire-strike": [
+     35555
+    ],
+    "3dmark-port-royal": [
+     8592
+    ]
+   }
+  },
+  "geforce-rtx-5080-16gb-gpu-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "GeForce RTX 5080 16GB",
+   "scores": {
+    "3dmark-fire-strike": [
+     72960
+    ],
+    "3dmark-port-royal": [
+     22224
+    ],
+    "3dmark-time-spy": [
+     32650
+    ],
+    "ai-local-toc-do-decode": [
+     129,
+     81
+    ],
+    "ai-local-toc-do-prefill": [
+     6410,
+     3821
+    ]
+   },
+   "type": "gpu"
+  },
+  "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": {
+   "cpu": "Ultra 5 325",
+   "gpu": "Intel Graphics 4 Xe3",
+   "measured": true,
+   "name": "HP OmniBook X Flip 14",
+   "scores": {
+    "cinebench-2026": [
+     389,
+     1701
+    ],
+    "procyon-battery": [
+     586
+    ]
+   },
+   "type": "laptop"
+  },
+  "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop-ref": {
+   "cpu": "Ultra 5 325",
+   "gpu": "Intel Graphics 4 Xe3",
+   "measured": false,
+   "name": "HP OmniBook X Flip 14",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     2285
+    ],
+    "geekbench-7": [
+     2033,
+     10967
+    ]
+   },
+   "type": "laptop"
+  },
+  "macbook-air-m5-laptop": {
+   "cpu": "M5",
+   "gpu": "",
+   "measured": true,
+   "name": "MacBook Air",
+   "scores": {
+    "procyon-battery": [
+     718
+    ]
+   },
+   "type": "laptop"
+  },
+  "macbook-neo-laptop": {
+   "cpu": "",
+   "gpu": "",
+   "measured": true,
+   "name": "MacBook Neo",
+   "scores": {
+    "procyon-battery": [
+     757
+    ]
+   },
+   "type": "laptop"
+  },
+  "nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
+   "name": "Nitro ProPanel ANV16",
+   "cpu": "Core 5 205H",
+   "gpu": "RTX 3050 65W",
+   "type": "laptop",
+   "measured": true,
+   "scores": {
+    "cinebench-2024": [
+     108,
+     580
+    ],
+    "geekbench-6": [
+     2500,
+     9411
+    ],
+    "geekbench-7": [
+     2154,
+     9388
+    ],
+    "3dmark-time-spy": [
+     5020
+    ],
+    "3dmark-fire-strike": [
+     10790
+    ]
+   }
+  },
+  "nvidia-dgx-spark-gb10-desktop-ref": {
+   "name": "NVIDIA DGX Spark",
+   "cpu": "GB10",
+   "gpu": "GB10",
+   "type": "desktop",
+   "measured": false,
+   "scores": {
+    "ai-local-decode-qwen3-8-27b-qwen3-6-35b": [
+     11,
+     61
+    ],
+    "ai-local-prefill-qwen3-8-27b": [
+     839
+    ]
+   }
+  },
+  "razer-blade-16-ryzen-ai-9-hx-370-rtx-5090-175w-laptop": {
+   "cpu": "Ryzen AI 9 HX 370",
+   "gpu": "RTX 5090 175W",
+   "measured": true,
+   "name": "Razer Blade 16",
+   "scores": {
+    "3dmark-time-spy": [
+     24833
+    ],
+    "cinebench-2026": [
+     442,
+     3890
+    ],
+    "geekbench-6": [
+     2905,
+     8113
+    ],
+    "pcmark-10": [
+     8113
+    ]
+   },
+   "type": "laptop"
+  },
+  "ryzen-ai-9-hx-370-35w-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Ryzen AI 9 HX 370 (35W)",
+   "scores": {
+    "3dmark-time-spy": [
+     4253
+    ],
+    "cinebench-r23": [
+     1733,
+     16985
+    ]
+   },
+   "type": "laptop"
+  },
+  "ryzen-ai-9-hx-370-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Ryzen AI 9 HX 370",
+   "scores": {
+    "cinebench-2024": [
+     115,
+     1173
+    ]
+   },
+   "type": "laptop"
+  },
+  "ryzen-ai-max-395-radeon-8060s-laptop-ref": {
+   "name": "Ryzen AI Max+ 395",
+   "cpu": "Ryzen AI Max+ 395",
+   "gpu": "Radeon 8060S",
+   "type": "laptop",
+   "measured": false,
+   "scores": {
+    "3dmark-time-spy": [
+     10244
+    ],
+    "3dmark-fire-strike": [
+     27470
+    ],
+    "3dmark-port-royal": [
+     5184
+    ],
+    "ai-local-decode-qwen3-8-27b-qwen3-6-35b": [
+     13,
+     65
+    ],
+    "ai-local-prefill-qwen3-8-27b": [
+     292
+    ]
+   }
+  },
+  "snapdragon-x-elite-laptop-ref": {
+   "cpu": "",
+   "gpu": "",
+   "measured": false,
+   "name": "Snapdragon X Elite",
+   "scores": {
+    "cinebench-2024": [
+     130,
+     989
+    ]
+   },
+   "type": "laptop"
+  },
+  "strix-scar-18-2024-core-i9-14900hx-rtx-4090-175w-laptop": {
+   "cpu": "Core i9-14900HX",
+   "gpu": "RTX 4090 175W",
+   "measured": true,
+   "name": "Strix SCAR 18 2024",
+   "scores": {
+    "3dmark-fire-strike": [
+     33899
+    ],
+    "3dmark-time-spy": [
+     20495
+    ],
+    "cinebench-2024": [
+     130,
+     1999
+    ],
+    "geekbench-6": [
+     3043,
+     18721
+    ]
+   },
+   "type": "laptop"
+  },
+  "strix-scar-18-2025-core-ultra-9-275hx-rtx-5090-175w-laptop": {
+   "cpu": "Core Ultra 9 275HX",
+   "gpu": "RTX 5090 175W",
+   "measured": true,
+   "name": "Strix SCAR 18 2025",
+   "scores": {
+    "3dmark-fire-strike": [
+     40366
+    ],
+    "3dmark-time-spy": [
+     24100
+    ],
+    "cinebench-2024": [
+     137,
+     2067
+    ],
+    "geekbench-6": [
+     3133,
+     21364
+    ]
+   },
+   "type": "laptop"
+  },
+  "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": {
+   "cpu": "Core Ultra 9 290HX Plus",
+   "gpu": "RTX 5090 175W",
+   "measured": true,
+   "name": "Strix SCAR 18 2026",
+   "scores": {
+    "3dmark-fire-strike": [
+     42971
+    ],
+    "3dmark-time-spy": [
+     24103
+    ],
+    "cinebench-2024": [
+     140,
+     2366
+    ],
+    "geekbench-6": [
+     3198,
+     21965
+    ]
+   },
+   "type": "laptop"
+  },
+  "thinkpad-t14-gen-7-ultra-x7-358h-laptop": {
+   "cpu": "Ultra X7 358H",
+   "gpu": "",
+   "measured": true,
+   "name": "ThinkPad T14 Gen 7",
+   "scores": {
+    "3dmark-fire-strike": [
+     12311
+    ],
+    "3dmark-time-spy": [
+     6122
+    ],
+    "cinebench-2024": [
+     120,
+     889
+    ],
+    "geekbench-6": [
+     2700,
+     15687
+    ]
+   },
+   "type": "laptop"
+  },
+  "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": {
+   "cpu": "Ultra X7 368H",
+   "gpu": "",
+   "measured": true,
+   "name": "ThinkPad X1 Carbon Gen 14",
+   "scores": {
+    "3dmark-fire-strike": [
+     8964
+    ],
+    "3dmark-time-spy": [
+     3480
+    ],
+    "cinebench-2024": [
+     115,
+     845
+    ],
+    "geekbench-6": [
+     2768,
+     12089
+    ]
+   },
+   "type": "laptop"
+  },
+  "tuf-a14-ryzen-7-350-radeon-8060s-laptop": {
+   "cpu": "Ryzen 7 350",
+   "gpu": "Radeon 8060S",
+   "measured": true,
+   "name": "TUF A14",
+   "scores": {
+    "3dmark-time-spy": [
+     10200
+    ],
+    "cinebench-2026": [
+     395,
+     3160
+    ],
+    "geekbench-6": [
+     2810,
+     7963
+    ],
+    "pcmark-10": [
+     7963
+    ]
+   },
+   "type": "laptop"
+  },
+  "vivobook-s-15-snapdragon-x-elite-laptop": {
+   "cpu": "Snapdragon X Elite",
+   "gpu": "",
+   "measured": true,
+   "name": "Vivobook S 15",
+   "scores": {
+    "cinebench-2026": [
+     466,
+     4099
+    ],
+    "geekbench-6": [
+     2905,
+     13299
+    ]
+   },
+   "type": "laptop"
+  },
+  "vivobook-s14-radeon-890m-laptop": {
+   "cpu": "",
+   "gpu": "Radeon 890M",
+   "measured": true,
+   "name": "Vivobook S14",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     6244
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-14-ryzen-7-8840hs-radeon-780m-laptop-ref": {
+   "cpu": "Ryzen 7 8840HS",
+   "gpu": "Radeon 780M",
+   "measured": false,
+   "name": "Zenbook 14",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     5551
+    ],
+    "geekbench-6": [
+     2509,
+     11738
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-14-ryzen-ai-7-350-radeon-860m-laptop-ref": {
+   "cpu": "Ryzen AI 7 350",
+   "gpu": "Radeon 860M",
+   "measured": false,
+   "name": "Zenbook 14",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     2698
+    ],
+    "geekbench-6": [
+     2796,
+     12440
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-14-ultra-7-155h-intel-arc-laptop-ref": {
+   "cpu": "Ultra 7 155H",
+   "gpu": "Intel Arc",
+   "measured": false,
+   "name": "Zenbook 14",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     6443
+    ],
+    "geekbench-6": [
+     2451,
+     12360
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-14-ultra-7-255h-arc-140t-laptop-ref": {
+   "cpu": "Ultra 7 255H",
+   "gpu": "Arc 140T",
+   "measured": false,
+   "name": "Zenbook 14",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     5279
+    ],
+    "geekbench-6": [
+     2605,
+     12887
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": {
+   "cpu": "Core Ultra 9 386H",
+   "gpu": "Intel Graphics 4 Xe3",
+   "measured": true,
+   "name": "Zenbook 14 UX3480AA",
+   "scores": {
+    "3dmark-time-spy": [
+     4733
+    ],
+    "3dmark-wild-life-extreme": [
+     2899
+    ],
+    "cinebench-2024": [
+     121,
+     1020
+    ],
+    "cinebench-2026": [
+     389,
+     3973
+    ],
+    "cinebench-r23": [
+     2103,
+     17626
+    ],
+    "geekbench-6": [
+     2812,
+     15062
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-a14-snapdragon-x2-elite-laptop": {
+   "cpu": "Snapdragon X2 Elite",
+   "gpu": "",
+   "measured": true,
+   "name": "Zenbook A14",
+   "scores": {
+    "cinebench-2026": [
+     520,
+     4621
+    ],
+    "geekbench-6": [
+     3531,
+     19703
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": {
+   "cpu": "Snapdragon X2 Elite Extreme",
+   "gpu": "Adreno X2-90",
+   "measured": true,
+   "name": "Zenbook A16",
+   "scores": {
+    "3dmark-steel-nomad-light": [
+     4450
+    ],
+    "cinebench-2026": [
+     620,
+     6935
+    ],
+    "geekbench-6": [
+     3759,
+     22751
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-duo-2026-ultra-9-386h-laptop": {
+   "cpu": "Ultra 9 386H",
+   "gpu": "",
+   "measured": true,
+   "name": "Zenbook DUO 2026",
+   "scores": {
+    "procyon-battery": [
+     489
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-duo-ultra-9-285h-arc-140t-laptop-ref": {
+   "cpu": "Ultra 9 285H",
+   "gpu": "Arc 140T",
+   "measured": false,
+   "name": "Zenbook DUO",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     7260
+    ],
+    "geekbench-6": [
+     2964,
+     15950
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-s-14-core-ultra-x7-laptop": {
+   "cpu": "Core Ultra X7",
+   "gpu": "",
+   "measured": true,
+   "name": "Zenbook S 14",
+   "scores": {
+    "procyon-battery": [
+     565
+    ]
+   },
+   "type": "laptop"
+  },
+  "zenbook-s-14-ultra-7-258v-arc-140v-laptop-ref": {
+   "cpu": "Ultra 7 258V",
+   "gpu": "Arc 140V",
+   "measured": false,
+   "name": "Zenbook S 14",
+   "scores": {
+    "3dmark-wild-life-extreme": [
+     7443
+    ],
+    "geekbench-6": [
+     2689,
+     11118
+    ]
+   },
+   "type": "laptop"
+  },
+  "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": {
+   "cpu": "Ultra 9 386H",
+   "gpu": "RTX 5090 150W",
+   "measured": true,
+   "name": "Zephyrus DUO",
+   "scores": {
+    "3dmark-time-spy": [
+     21435
+    ],
+    "cinebench-2026": [
+     516,
+     5004
+    ],
+    "geekbench-6": [
+     3120,
+     9568
+    ],
+    "pcmark-10": [
+     9568
+    ]
+   },
+   "type": "laptop"
+  },
+  "zephyrus-g16-ultra-9-386h-rtx-5090-160w-laptop": {
+   "cpu": "Ultra 9 386H",
+   "gpu": "RTX 5090 160W",
+   "measured": true,
+   "name": "Zephyrus G16",
+   "scores": {
+    "3dmark-time-spy": [
+     22388
+    ],
+    "cinebench-2026": [
+     510,
+     4550
+    ],
+    "geekbench-6": [
+     3095,
+     9589
+    ],
+    "pcmark-10": [
+     9589
+    ]
+   },
+   "type": "laptop"
+  }
+ }
+}

@@ -70,3 +70,7 @@ pip install matplotlib numpy   # cần thêm ffmpeg trong PATH
 python3 render_chart.py data/geekbench6.json geekbench6
 python3 make_embed.py data/geekbench6.json https://<username>.github.io/tinhte-charts/chart.html
 ```
+
+## Kho máy so sánh
+
+`kho.json` là kho máy dùng chung với web app **Tinhte Chart Studio** (https://claude.ai/artifact/Lj5az4TmARVrotxWUmjvPa). App tự đọc file này khi mở và ghi lại khi lưu hoặc xóa máy, nên kho trong app luôn khớp repo. Thêm máy mới vào `data/` thì nhớ thêm máy đó vào `kho.json` (xem `CLAUDE.md`).
