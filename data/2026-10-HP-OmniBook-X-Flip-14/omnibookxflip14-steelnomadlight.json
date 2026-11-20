@@ -9,7 +9,7 @@
 
   "items": [
     { "name": "HP OmniBook X Flip 14 (Intel Graphics 4 Xe3)", "values": [2285], "highlight": true },
-    { "name": "ASUS Vivobook S16 (Snapdragon X)", "values": [1750] },
+    { "name": "ASUS Vivobook S16 (Adreno X1-45)", "values": [1750] },
     { "name": "Zenbook A16 (Adreno X2-90)", "values": [4450] },
     { "name": "ExpertBook Ultra (Intel Arc B390)", "values": [6095] }
   ]

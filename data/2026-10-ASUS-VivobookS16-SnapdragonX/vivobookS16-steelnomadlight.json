@@ -8,8 +8,8 @@
   "seriesColors": ["#FF8C00"],
 
   "items": [
-    { "name": "ASUS Vivobook S16 (Snapdragon X)", "values": [1750], "highlight": true },
-    { "name": "ASUS Zenbook 14 (Core Ultra 5 125H)", "values": [2610] },
-    { "name": "ASUS Zenbook 14 (Ryzen 7 8840U)", "values": [2760] }
+    { "name": "ASUS Vivobook S16 (Adreno X1-45)", "values": [1750], "highlight": true },
+    { "name": "ASUS Zenbook 14 (Intel Arc, 7 Xe)", "values": [2610] },
+    { "name": "ASUS Zenbook 14 (Radeon 780M)", "values": [2760] }
   ]
 }
