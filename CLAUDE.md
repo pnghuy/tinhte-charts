@@ -7,6 +7,9 @@ Repo làm chart benchmark cho bài review Tinh tế. Schema JSON, cách render v
 - Tên file viết thường, dùng gạch ngang, không dấu, luôn có đuôi `.json`.
 - Có `series` thì là chart nhóm (`values`), không có thì là chart đơn (`value`).
 - Máy đang review đặt `"highlight": true`. Tên ghi kèm chip trong ngoặc, ví dụ `HP OmniBook X Flip 14 (Ultra 5 325)`.
+- Bài CPU (Cinebench, Geekbench, Procyon…) ghi tên CPU trong ngoặc. Bài đồ họa (3DMark, game, AI chạy trên GPU…) ghi tên GPU, máy chỉ có iGPU thì ghi tên iGPU, KHÔNG ghi tên CPU. Ví dụ Time Spy ghi `ExpertBook Ultra (Arc B390)`, không ghi `ExpertBook Ultra (Ultra X7 358H)`.
+- Tên máy giữ đủ thương hiệu, ví dụ `Acer Nitro ProPanel ANV16`, không bỏ chữ `Acer`.
+- Trong `kho.json`, máy nào có điểm đồ họa thì phải điền `gpu` (tên iGPU nếu không có card rời).
 - Không để dấu phẩy sau item cuối cùng. Tạo xong thì kiểm tra lại bằng `python3 -c "import json;json.load(open('<file>'))"`.
 
 ## Kho máy so sánh (`kho.json`)

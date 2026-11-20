@@ -232,7 +232,7 @@
   },
   "asus-vivobook-s16-snapdragon-x-laptop": {
    "cpu": "Snapdragon X",
-   "gpu": "",
+   "gpu": "Adreno X1-45",
    "measured": true,
    "name": "ASUS Vivobook S16",
    "scores": {
@@ -259,7 +259,7 @@
   },
   "asus-zenbook-14-core-ultra-5-125h-laptop": {
    "cpu": "Core Ultra 5 125H",
-   "gpu": "",
+   "gpu": "Intel Arc 7 Xe",
    "measured": true,
    "name": "ASUS Zenbook 14",
    "scores": {
@@ -286,7 +286,7 @@
   },
   "asus-zenbook-14-ryzen-7-8840u-laptop": {
    "cpu": "Ryzen 7 8840U",
-   "gpu": "",
+   "gpu": "Radeon 780M",
    "measured": true,
    "name": "ASUS Zenbook 14",
    "scores": {
@@ -312,8 +312,8 @@
    "type": "laptop"
   },
   "core-ultra-5-125h-50w-laptop-ref": {
-   "cpu": "",
-   "gpu": "",
+   "cpu": "Core Ultra 5 125H",
+   "gpu": "Intel Arc 7 Xe",
    "measured": false,
    "name": "Core Ultra 5 125H (50W)",
    "scores": {
@@ -325,11 +325,13 @@
      11884
     ]
    },
-   "type": "laptop"
+   "type": "laptop",
+   "chipOnly": true,
+   "note": "50W"
   },
   "core-ultra-7-155h-55w-laptop-ref": {
-   "cpu": "",
-   "gpu": "",
+   "cpu": "Core Ultra 7 155H",
+   "gpu": "Intel Arc 8 Xe",
    "measured": false,
    "name": "Core Ultra 7 155H (55W)",
    "scores": {
@@ -341,11 +343,13 @@
      11675
     ]
    },
-   "type": "laptop"
+   "type": "laptop",
+   "chipOnly": true,
+   "note": "55W"
   },
   "core-ultra-7-258v-30w-laptop-ref": {
-   "cpu": "",
-   "gpu": "",
+   "cpu": "Core Ultra 7 258V",
+   "gpu": "Arc 140V",
    "measured": false,
    "name": "Core Ultra 7 258V (30W)",
    "scores": {
@@ -357,12 +361,14 @@
      11268
     ]
    },
-   "type": "laptop"
+   "type": "laptop",
+   "chipOnly": true,
+   "note": "30W"
   },
   "core-ultra-x7-358h-arc-b390-laptop-ref": {
    "name": "Core Ultra X7 358H",
    "cpu": "Core Ultra X7 358H",
-   "gpu": "Arc B390",
+   "gpu": "Intel Arc B390",
    "type": "laptop",
    "measured": false,
    "scores": {
@@ -375,7 +381,8 @@
     "3dmark-port-royal": [
      3980
     ]
-   }
+   },
+   "chipOnly": true
   },
   "core-ultra-x9-388h-intel-cong-bo-laptop-ref": {
    "cpu": "",
@@ -426,7 +433,7 @@
   },
   "dell-xps-14-ultra-x7-358h-laptop": {
    "cpu": "Ultra X7 358H",
-   "gpu": "",
+   "gpu": "Arc B390",
    "measured": true,
    "name": "Dell XPS 14",
    "scores": {
@@ -669,8 +676,8 @@
    "type": "laptop"
   },
   "ryzen-ai-9-hx-370-35w-laptop-ref": {
-   "cpu": "",
-   "gpu": "",
+   "cpu": "Ryzen AI 9 HX 370",
+   "gpu": "Radeon 890M",
    "measured": false,
    "name": "Ryzen AI 9 HX 370 (35W)",
    "scores": {
@@ -682,7 +689,9 @@
      16985
     ]
    },
-   "type": "laptop"
+   "type": "laptop",
+   "chipOnly": true,
+   "note": "35W"
   },
   "ryzen-ai-9-hx-370-laptop-ref": {
    "cpu": "",
@@ -720,7 +729,8 @@
     "ai-local-prefill-qwen3-8-27b": [
      292
     ]
-   }
+   },
+   "chipOnly": true
   },
   "snapdragon-x-elite-laptop-ref": {
    "cpu": "",
@@ -806,7 +816,7 @@
   },
   "thinkpad-t14-gen-7-ultra-x7-358h-laptop": {
    "cpu": "Ultra X7 358H",
-   "gpu": "",
+   "gpu": "Arc B390",
    "measured": true,
    "name": "ThinkPad T14 Gen 7",
    "scores": {
@@ -829,7 +839,7 @@
   },
   "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": {
    "cpu": "Ultra X7 368H",
-   "gpu": "",
+   "gpu": "Arc B390",
    "measured": true,
    "name": "ThinkPad X1 Carbon Gen 14",
    "scores": {
@@ -936,7 +946,7 @@
   },
   "zenbook-14-ultra-7-155h-intel-arc-laptop-ref": {
    "cpu": "Ultra 7 155H",
-   "gpu": "Intel Arc",
+   "gpu": "Intel Arc 8 Xe",
    "measured": false,
    "name": "Zenbook 14",
    "scores": {
