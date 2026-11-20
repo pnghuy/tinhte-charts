@@ -9,6 +9,14 @@ Repo làm chart benchmark cho bài review Tinh tế. Schema JSON, cách render v
 - Máy đang review đặt `"highlight": true`. Tên ghi kèm chip trong ngoặc, ví dụ `HP OmniBook X Flip 14 (Ultra 5 325)`.
 - Không để dấu phẩy sau item cuối cùng. Tạo xong thì kiểm tra lại bằng `python3 -c "import json;json.load(open('<file>'))"`.
 
+## Kho máy so sánh (`kho.json`)
+- `kho.json` ở gốc repo là kho máy của web app Tinhte Chart Studio (https://claude.ai/artifact/Lj5az4TmARVrotxWUmjvPa). App đọc file này mỗi lần mở và ghi lại mỗi khi lưu/xóa máy, qua kết nối GitHub.
+- Mỗi lần thêm folder máy mới vào `data/`, cập nhật luôn `kho.json` trong cùng commit/PR: thêm (hoặc sửa) một mục trong `devices` cho từng máy, gộp mọi bài test của cùng một máy vào một mục.
+- Mỗi mục: `name` (tên máy, không kèm chip), `cpu`, `gpu`, `type` (`laptop` | `desktop` | `gpu` | `cpu`), `measured` (true khi Tinh tế tự đo), `scores` (`{id bài test: [điểm]}`, bài có series thì đủ số theo thứ tự series).
+- Id máy: tên + chip viết thường, gạch ngang, đuôi loại máy, thêm `-ref` nếu là số tham khảo, ví dụ `nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop`.
+- Id bài test chuẩn nằm trong `TESTS` của Chart Studio (`3dmark-time-spy`, `cinebench-2024`, `geekbench-6`…). Bài ngoài danh sách đó khai báo thêm trong `tests`.
+- Không đặt `kho.json` trong `data/`: workflow render sẽ coi nó là chart.
+
 ## Thứ tự máy trong chart (áp dụng cho mọi bài)
 - Máy đang review luôn đứng đầu.
 - Các máy so sánh xếp giảm dần theo điểm chính: chart đơn xếp theo `value`; chart nhóm xếp theo series cuối (ví dụ Multi-core); pin xếp theo thời lượng.
