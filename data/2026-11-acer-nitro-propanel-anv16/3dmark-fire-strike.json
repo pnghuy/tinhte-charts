@@ -1,0 +1,13 @@
+{
+  "title": "3DMark Fire Strike",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế (RTX 3050, 4050, 5050 đo 08/2026)",
+  "items": [
+    { "name": "Nitro ProPanel ANV16 (RTX 3050 65W)", "value": 10790, "color": "#E53935", "highlight": true },
+    { "name": "Nitro ProPanel (RTX 5050 75W)", "value": 20647, "color": "#9E9E9E" },
+    { "name": "Nitro ProPanel (RTX 4050 75W)", "value": 14534, "color": "#9E9E9E" },
+    { "name": "ExpertBook Ultra (Arc B390)", "value": 12993, "color": "#9E9E9E" },
+    { "name": "ThinkPad X1 Carbon Gen 14 (Ultra X7 368H)", "value": 8964, "color": "#9E9E9E" }
+  ]
+}
