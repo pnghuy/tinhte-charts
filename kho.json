@@ -63,6 +63,33 @@
   }
  },
  "devices": {
+  "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
+   "name": "Acer Nitro ProPanel ANV16",
+   "cpu": "Core 5 205H",
+   "gpu": "RTX 3050 65W",
+   "type": "laptop",
+   "measured": true,
+   "scores": {
+    "cinebench-2024": [
+     108,
+     580
+    ],
+    "geekbench-6": [
+     2500,
+     9411
+    ],
+    "geekbench-7": [
+     2154,
+     9388
+    ],
+    "3dmark-time-spy": [
+     5020
+    ],
+    "3dmark-fire-strike": [
+     10790
+    ]
+   }
+  },
   "acer-nitro-propanel-core-7-240h-laptop": {
    "cpu": "Core 7 240H",
    "gpu": "",
@@ -601,33 +628,6 @@
     ]
    },
    "type": "laptop"
-  },
-  "nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
-   "name": "Nitro ProPanel ANV16",
-   "cpu": "Core 5 205H",
-   "gpu": "RTX 3050 65W",
-   "type": "laptop",
-   "measured": true,
-   "scores": {
-    "cinebench-2024": [
-     108,
-     580
-    ],
-    "geekbench-6": [
-     2500,
-     9411
-    ],
-    "geekbench-7": [
-     2154,
-     9388
-    ],
-    "3dmark-time-spy": [
-     5020
-    ],
-    "3dmark-fire-strike": [
-     10790
-    ]
-   }
   },
   "nvidia-dgx-spark-gb10-desktop-ref": {
    "name": "NVIDIA DGX Spark",
