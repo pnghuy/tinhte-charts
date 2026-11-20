@@ -1,14 +1,14 @@
 {
   "title": "Cinebench 2024",
-  "subtitle": "Điểm tham khảo, càng cao càng tốt",
+  "subtitle": "Điểm càng cao càng tốt",
   "unit": "điểm",
-  "source": "Nguồn: Nitro ANV16 (Core 5 205H) theo nanoreview.info; máy so sánh: Tinhte.vn đo thực tế",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
 
   "series": ["Đơn nhân", "Đa nhân"],
   "seriesColors": ["#0088CC", "#6CBE45"],
 
   "items": [
-    { "name": "Nitro ProPanel ANV16 (Core 5 205H)", "values": [106, 591], "highlight": true },
+    { "name": "Nitro ProPanel ANV16 (Core 5 205H)", "values": [108, 580], "highlight": true },
     { "name": "Nitro ProPanel (Core 7 240H)", "values": [110, 833] },
     { "name": "Zenbook 14 (Core Ultra 5 125H)", "values": [101, 685] },
     { "name": "Vivobook S16 (Snapdragon X)", "values": [88, 640] },
