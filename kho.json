@@ -259,7 +259,7 @@
   },
   "asus-zenbook-14-core-ultra-5-125h-laptop": {
    "cpu": "Core Ultra 5 125H",
-   "gpu": "Intel Arc 7 Xe",
+   "gpu": "Intel Arc (7 Xe)",
    "measured": true,
    "name": "ASUS Zenbook 14",
    "scores": {
@@ -313,7 +313,7 @@
   },
   "core-ultra-5-125h-50w-laptop-ref": {
    "cpu": "Core Ultra 5 125H",
-   "gpu": "Intel Arc 7 Xe",
+   "gpu": "Intel Arc (7 Xe)",
    "measured": false,
    "name": "Core Ultra 5 125H (50W)",
    "scores": {
@@ -331,7 +331,7 @@
   },
   "core-ultra-7-155h-55w-laptop-ref": {
    "cpu": "Core Ultra 7 155H",
-   "gpu": "Intel Arc 8 Xe",
+   "gpu": "Intel Arc (8 Xe)",
    "measured": false,
    "name": "Core Ultra 7 155H (55W)",
    "scores": {
@@ -946,7 +946,7 @@
   },
   "zenbook-14-ultra-7-155h-intel-arc-laptop-ref": {
    "cpu": "Ultra 7 155H",
-   "gpu": "Intel Arc 8 Xe",
+   "gpu": "Intel Arc (8 Xe)",
    "measured": false,
    "name": "Zenbook 14",
    "scores": {
