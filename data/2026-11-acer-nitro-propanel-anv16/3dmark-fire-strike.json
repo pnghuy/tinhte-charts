@@ -5,9 +5,9 @@
   "source": "Nguồn: Tinhte.vn đo thực tế (RTX 3050, 4050, 5050 đo 08/2026)",
   "items": [
     { "name": "Acer Nitro ProPanel ANV16 (RTX 3050 65W)", "value": 10790, "color": "#E53935", "highlight": true },
-    { "name": "Acer Nitro ProPanel (RTX 5050 75W)", "value": 20647, "color": "#9E9E9E" },
-    { "name": "Acer Nitro ProPanel (RTX 4050 75W)", "value": 14534, "color": "#9E9E9E" },
-    { "name": "ExpertBook Ultra (Arc B390)", "value": 12993, "color": "#9E9E9E" },
-    { "name": "ThinkPad X1 Carbon Gen 14 (Arc B390)", "value": 8964, "color": "#9E9E9E" }
+    { "name": "RTX 5050 75W", "value": 20647, "color": "#9E9E9E" },
+    { "name": "RTX 4050 75W", "value": 14534, "color": "#9E9E9E" },
+    { "name": "Arc B390 (Core Ultra X7 358H)", "value": 12993, "color": "#9E9E9E" },
+    { "name": "Arc B390 (Core Ultra X7 368H)", "value": 8964, "color": "#9E9E9E" }
   ]
 }

@@ -2,16 +2,16 @@
   "title": "Geekbench 7",
   "subtitle": "Điểm càng cao càng tốt",
   "unit": "điểm",
-  "source": "Nguồn: Tinhte.vn đo thực tế. Đa nhân OmniBook X Flip 14: Geekbench Browser",
+  "source": "Nguồn: Tinhte.vn đo thực tế. Đa nhân Core Ultra 5 325: Geekbench Browser",
 
   "series": ["Đơn nhân", "Đa nhân"],
   "seriesColors": ["#0088CC", "#6CBE45"],
 
   "items": [
     { "name": "Acer Nitro ProPanel ANV16 (Core 5 205H)", "values": [2154, 9388], "highlight": true },
-    { "name": "HP OmniBook X Flip 14 (Ultra 5 325)", "values": [2033, 10967] },
-    { "name": "Zenbook 14 (Ryzen 7 8840U)", "values": [2290, 10350] },
-    { "name": "Zenbook 14 (Core Ultra 5 125H)", "values": [2180, 9250] },
-    { "name": "Vivobook S16 (Snapdragon X)", "values": [1655, 8768] }
+    { "name": "Core Ultra 5 325", "values": [2033, 10967] },
+    { "name": "Ryzen 7 8840U", "values": [2290, 10350] },
+    { "name": "Core Ultra 5 125H", "values": [2180, 9250] },
+    { "name": "Snapdragon X", "values": [1655, 8768] }
   ]
 }

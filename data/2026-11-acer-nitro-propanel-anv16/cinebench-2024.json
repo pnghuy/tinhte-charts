@@ -9,9 +9,9 @@
 
   "items": [
     { "name": "Acer Nitro ProPanel ANV16 (Core 5 205H)", "values": [108, 580], "highlight": true },
-    { "name": "Acer Nitro ProPanel (Core 7 240H)", "values": [110, 833] },
-    { "name": "Zenbook 14 (Core Ultra 5 125H)", "values": [101, 685] },
-    { "name": "Vivobook S16 (Snapdragon X)", "values": [88, 640] },
-    { "name": "Acer Nitro ProPanel (Core i5-13420H)", "values": [97, 520] }
+    { "name": "Core 7 240H", "values": [110, 833] },
+    { "name": "Core Ultra 5 125H", "values": [101, 685] },
+    { "name": "Snapdragon X", "values": [88, 640] },
+    { "name": "Core i5-13420H", "values": [97, 520] }
   ]
 }
