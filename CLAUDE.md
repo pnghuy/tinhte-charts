@@ -20,6 +20,13 @@ Repo làm chart benchmark cho bài review Tinh tế. Schema JSON, cách render v
 - Id bài test chuẩn nằm trong `TESTS` của Chart Studio (`3dmark-time-spy`, `cinebench-2024`, `geekbench-6`…). Bài ngoài danh sách đó khai báo thêm trong `tests`.
 - Không đặt `kho.json` trong `data/`: workflow render sẽ coi nó là chart.
 
+## Thông tin máy cho web Laptop Lab (`laptops.json`)
+- Web tra cứu cho member (Tinh tế Laptop Lab, repo pnghuy/PC-data-manager) đọc điểm từ `kho.json` và thông tin thêm từ `laptops.json` ở gốc repo. Khoá là id máy trong `kho.json`.
+- Mỗi lần review xong một máy mới, thêm mục cho máy đó vào `laptops.json` trong cùng PR, ít nhất `test_date` (`YYYY-MM`). Có link bài, RAM, màn hình, pin thì điền luôn (mẫu: `templates/sample-laptop-metadata.json` của PC-data-manager).
+- Đổi id máy trong `kho.json` thì đổi khoá tương ứng trong `laptops.json`.
+- Ngoại lệ đổi tên máy cho bài khách (chỉ ghi tên chip…) chỉ sửa file chart trong `data/`, không sửa `kho.json` hay `laptops.json`: web cho member luôn hiện tên đầy đủ.
+- Không đặt `laptops.json` trong `data/`.
+
 ## Thứ tự máy trong chart (áp dụng cho mọi bài)
 - Máy đang review luôn đứng đầu.
 - Các máy so sánh xếp giảm dần theo điểm chính: chart đơn xếp theo `value`; chart nhóm xếp theo series cuối (ví dụ Multi-core); pin xếp theo thời lượng.
