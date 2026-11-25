@@ -1,0 +1,24 @@
+{
+ "_note": "Thông tin thêm cho web Tinh tế Laptop Lab, khoá là id máy trong kho.json. Điểm benchmark vẫn nằm trong kho.json. Mẫu đầy đủ các trường (màn hình, pin, link bài, ảnh…): templates/sample-laptop-metadata.json trong repo pnghuy/PC-data-manager. \"hidden\": true để ẩn thẻ máy; \"show\": true để hiện thẻ cho máy chỉ có số tham khảo.",
+ "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
+  "test_date": "2026-11",
+  "tester": "pnghuy",
+  "ram": "16GB"
+ },
+ "asus-proart-p16-rtx-spark-n1x-laptop-ref": {
+  "test_date": "2026-11",
+  "show": true
+ },
+ "asus-vivobook-s16-snapdragon-x-laptop": { "test_date": "2026-10" },
+ "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
+ "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
+ "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": { "test_date": "2026-08" },
+ "acer-nitro-propanel-rtx-3050-65w-laptop": { "test_date": "2026-08" },
+ "acer-nitro-propanel-rtx-4050-75w-laptop": { "test_date": "2026-08" },
+ "acer-nitro-propanel-rtx-5050-75w-laptop": { "test_date": "2026-08" },
+ "acer-nitro-propanel-core-7-240h-laptop": { "test_date": "2026-08" },
+ "acer-nitro-propanel-core-i5-13420h-laptop": { "test_date": "2026-08" },
+ "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": { "test_date": "2026-07" },
+ "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": { "test_date": "2026-07" },
+ "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": { "test_date": "2026-07" }
+}
