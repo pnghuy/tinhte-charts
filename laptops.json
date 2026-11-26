@@ -1,24 +1,356 @@
 {
  "_note": "Thông tin thêm cho web Tinh tế Laptop Lab, khoá là id máy trong kho.json. Điểm benchmark vẫn nằm trong kho.json. Mẫu đầy đủ các trường (màn hình, pin, link bài, ảnh…): templates/sample-laptop-metadata.json trong repo pnghuy/PC-data-manager. \"hidden\": true để ẩn thẻ máy; \"show\": true để hiện thẻ cho máy chỉ có số tham khảo.",
- "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
-  "test_date": "2026-11",
-  "tester": "pnghuy",
-  "ram": "16GB"
- },
+ "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {"test_date": "2026-11", "tester": "pnghuy", "ram": "16GB"},
  "asus-proart-p16-rtx-spark-n1x-laptop-ref": {
-  "test_date": "2026-11",
-  "show": true
+   "test_date": "2026-11",
+   "show": true,
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-proart-p16-rtx-spark-n1x-khi-nvidia-bat-dau-viet-lai-dinh-nghia-ve-may-tinh-ca-nhan.4192385/",
+   "ram": "128GB"
  },
- "asus-vivobook-s16-snapdragon-x-laptop": { "test_date": "2026-10" },
- "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
- "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
- "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-3050-65w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-4050-75w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-5050-75w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-core-7-240h-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-core-i5-13420h-laptop": { "test_date": "2026-08" },
- "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": { "test_date": "2026-07" },
- "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": { "test_date": "2026-07" },
- "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": { "test_date": "2026-07" }
+ "asus-vivobook-s16-snapdragon-x-laptop": {
+   "test_date": "2026-10",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-vivobook-s16-s5608qa-26-trieu-cho-chiec-may-nay-thi-qua-ngon.4182508/",
+   "ram": "16GB",
+   "display": {
+     "brightness": 400,
+     "srgb": 98,
+     "adobergb": 76,
+     "dcip3": 75
+   }
+ },
+ "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": {
+   "test_date": "2026-10",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-14-oled-ux3480aa-2026-zenbook-da-lot-xac-hoan-toan.4186762/",
+   "battery": {
+     "wh": 70
+   }
+ },
+ "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": {"test_date": "2026-10"},
+ "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-a16-chip-manh-nhat-cua-qualcomm-tren-laptop-van-bi-phan-mem-kim-ham.4174373/",
+   "ram": "24GB"
+ },
+ "acer-nitro-propanel-rtx-3050-65w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-rtx-4050-75w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-rtx-5050-75w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-core-7-240h-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-core-i5-13420h-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-rog-strix-scar-18-2026-laptop-manh-nhat-cua-rog-nang-cap-ram-va-ssd-cuc-de.4164328/",
+   "battery": {
+     "wh": 90
+   }
+ },
+ "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-lenovo-thinkpad-x1-carbon-gen-14-quiet-luxury.4159926/",
+   "ram": "64GB",
+   "battery": {
+     "wh": 58
+   },
+   "display": {
+     "size": 14,
+     "resolution": "2.8K",
+     "refresh_hz": 120,
+     "panel": "OLED"
+   }
+ },
+ "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zephyrus-duo-2-man-hinh-200-trieu-ban-can-gi-o-no.4156681/",
+   "battery": {
+     "wh": 90
+   },
+   "notes": "GB6 đa nhân 17015 là điểm tham khảo XDA (https://www.xda-developers.com/review-asus-zephyrus-duo-2026/); tbreak đo 17029. Số cũ 9568 nhập nhầm từ PCMark 10."
+ },
+ "expertbook-ultra-ultra-x7-358h-intel-arc-b390-laptop": {
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-expertbook-ultra-day-co-the-la-chiec-ultrabook-end-game-ma-ban-dang-tim-kiem.4145110/",
+   "test_date": "2026-05",
+   "ram": "32GB"
+ },
+ "zenbook-a14-snapdragon-x2-elite-laptop": {
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-a14-hieu-nang-ngon-may-rat-nhe-nhung-co-2-diem-anh-em-can-luu-y.4150307/",
+   "test_date": "2026-06",
+   "battery": {
+     "wh": 70
+   }
+ },
+ "macbook-neo-laptop": {
+   "test_date": "2026-03",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/danh-gia-macbook-neo-dung-fomo-hay-tinh-tao.4133427/",
+   "ram": "8GB",
+   "display": {
+     "size": 13,
+     "resolution": "2408 x 1506",
+     "refresh_hz": 60,
+     "panel": "IPS LCD",
+     "brightness": 538,
+     "srgb": 96,
+     "adobergb": 71,
+     "dcip3": 71,
+     "deltae": 1.44
+   },
+   "battery": {
+     "wh": 36.5
+   }
+ },
+ "crosshair-16-max-hx-core-ultra-9-290hx-plus-laptop": {
+   "test_date": "2026-07",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/tren-tay-msi-crosshair-16-max-hx-2026-man-hinh-rat-dep-rtx-5070-12gb-tan-nhiet-ngon.4160947/",
+   "ram": "32GB",
+   "display": {
+     "size": 16,
+     "resolution": "2560 x 1600",
+     "panel": "OLED",
+     "brightness": 487.9,
+     "srgb": 100,
+     "adobergb": 86,
+     "dcip3": 97,
+     "deltae": 0.61,
+     "contrast": "8230:1"
+   }
+ },
+ "asus-zenbook-s-14-2026-ultra-9-386h-laptop": {
+   "test_date": "2026-04",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-s14-oled-2026-manh-hon-don-gian-hon-pin-van-tuyet-voi.4124647/",
+   "battery": {
+     "wh": 77
+   }
+ },
+ "msi-ge76-raider-core-i9-12900hk-rtx-3080-ti-laptop": {
+   "test_date": "2022-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-core-i9-12900hk-tren-ge76-raider-cpu-laptop-gio-qua-manh.3553640/",
+   "ram": "64GB",
+   "display": {
+     "size": 17.3,
+     "resolution": "3840 x 2160",
+     "refresh_hz": 120
+   },
+   "battery": {
+     "wh": 99.9
+   }
+ },
+ "razer-blade-15-2022-core-i7-12800h-rtx-3080-ti-110w-laptop": {
+   "test_date": "2022-09",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-bo-doi-razer-blade-14-amd-va-blade-15-intel-the-he-moi.3566931/",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 360,
+     "panel": "IPS",
+     "brightness": 340,
+     "srgb": 97,
+     "adobergb": 70
+   }
+ },
+ "razer-blade-14-2022-ryzen-9-6900hx-rtx-3080-ti-100w-laptop": {
+   "test_date": "2022-09",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-bo-doi-razer-blade-14-amd-va-blade-15-intel-the-he-moi.3566931/",
+   "ram": "16GB",
+   "display": {
+     "size": 14,
+     "resolution": "2560 x 1440",
+     "refresh_hz": 165,
+     "panel": "IPS",
+     "srgb": 100,
+     "adobergb": 86,
+     "dcip3": 97
+   }
+ },
+ "msi-alpha-15-ryzen-7-5800h-rx-6600m-laptop": {
+   "test_date": "2021-10",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-msi-alpha-15-mot-chiec-may-dat-chuan-amd-advantage-manh-me-rat-dang-de-xai.3414205/",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "brightness": 260,
+     "srgb": 93,
+     "adobergb": 63,
+     "contrast": "1000:1"
+   },
+   "battery": {
+     "wh": 90
+   }
+ },
+ "msi-pulse-gl66-core-i7-11800h-rtx-3050-ti-60w-laptop": {
+   "test_date": "2021-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-msi-pulse-gl66-rtx-3050-ti-se-cho-anh-em-choi-game-tot-toi-dau.3392897/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "srgb": 92,
+     "adobergb": 65
+   },
+   "battery": {
+     "wh": 52
+   }
+ },
+ "msi-bravo-15-ryzen-5-4600h-rx-5300m-laptop": {
+   "test_date": "2020-06",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-msi-bravo-15-chiec-laptop-7nm-voi-ryzen-4000-6-nhan-rx-5300m-hieu-nang-gia-qua-tot.3150171/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 60,
+     "panel": "IPS",
+     "srgb": 50
+   },
+   "battery": {
+     "wh": 51
+   }
+ },
+ "hp-zbook-firefly-14-g8-core-i5-1135g7-t500-laptop": {
+   "test_date": "2022-12",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/hp-zbook-firefly-14-g8-chiec-may-tram-di-dong-nho-gon-rat-dang-xai.3603288/",
+   "ram": "16GB",
+   "display": {
+     "size": 14,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 60,
+     "panel": "IPS",
+     "brightness": 400,
+     "srgb": 99,
+     "adobergb": 70,
+     "contrast": "1000:1"
+   },
+   "battery": {
+     "wh": 53
+   }
+ },
+ "asus-rog-zephyrus-m15-core-i7-10750h-gtx-1660-ti-laptop": {
+   "test_date": "2020-10",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-rog-zephyrus-m15-chiec-laptop-gaming-mong-ma-minh-dang-xai.3205875/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 240,
+     "panel": "IPS",
+     "brightness": 280,
+     "srgb": 97
+   }
+ },
+ "msi-gs66-stealth-core-i7-10750h-rtx-2060-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-nhanh-gs66-stealth-thiet-ke-moi-hoan-thien-tot-hon-hieu-nang-on.3176342/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 240,
+     "panel": "IPS"
+   },
+   "battery": {
+     "wh": 99.9
+   }
+ },
+ "dell-precision-5550-core-i7-10750h-quadro-t1000-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-so-precision-5550-vs-5750-cung-cpu-nhung-khac-tan-nhiet-khac-hieu-nang-rtx-3000-manh.3173338/",
+   "battery": {
+     "wh": 86
+   }
+ },
+ "dell-precision-5750-core-i7-10750h-quadro-rtx-3000-max-q-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-so-precision-5550-vs-5750-cung-cpu-nhung-khac-tan-nhiet-khac-hieu-nang-rtx-3000-manh.3173338/"
+ },
+ "hp-envy-15-2020-core-i7-10750h-gtx-1660-ti-laptop": {
+   "test_date": "2020-12",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/chia-se-ve-chiec-envy-15-2020-cai-minh-thich-va-chua-thich-hieu-nang-va-man-hinh.3232955/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "refresh_hz": 60,
+     "brightness": 334,
+     "srgb": 99,
+     "adobergb": 78,
+     "contrast": "940:1"
+   }
+ },
+ "hp-pavilion-gaming-15-ryzen-5-4600h-gtx-1650-laptop": {
+   "test_date": "2020-11",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-hp-pavilion-gaming-15-chay-amd-ryzen-dang-tung-xu.3219632/",
+   "ram": "8GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "panel": "IPS"
+   },
+   "battery": {
+     "wh": 52.5
+   }
+ },
+ "samsung-galaxy-book2-360-13-core-i7-1255u-iris-xe-laptop": {
+   "test_date": "2023-01",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-samsung-galaxy-book2-360-13-laptop-cua-samsung-xai-rat-duoc.3628568/",
+   "ram": "16GB",
+   "display": {
+     "size": 13.3,
+     "refresh_hz": 60,
+     "panel": "AMOLED"
+   }
+ },
+ "zephyrus-g16-ultra-9-386h-rtx-5090-160w-laptop": {
+   "notes": "GB6 đa nhân 16960 là điểm tham khảo Tom's Guide (https://www.tomsguide.com/computing/gaming-laptops/asus-rog-zephyrus-g16-2026-review, bản RTX 5080, cùng Ultra 9 386H). Số cũ 9589 nhập nhầm từ PCMark 10."
+ },
+ "razer-blade-16-ryzen-ai-9-hx-370-rtx-5090-175w-laptop": {
+   "notes": "GB6 đa nhân 15671 là điểm tham khảo Notebookcheck (https://www.notebookcheck.net/2026-Razer-Blade-16-trades-away-AMD-for-Intel-with-great-results.1303680.0.html); Tom's Hardware 16025, XDA 15531. Số cũ 8113 nhập nhầm từ PCMark 10."
+ },
+ "zenbook-duo-2026-ultra-9-386h-laptop": {
+   "notes": "Id cũ còn chữ 386H nhưng máy là Core Ultra X9 388H (anh xác nhận 27/11/2026). Điểm CPU/GPU từ bài Panther Lake 4125712."
+ },
+ "core-ultra-x9-388h-tinhte-do-laptop": {"hidden": true},
+ "asus-rog-flow-z13-2025-ryzen-ai-max-plus-395-radeon-8060s-laptop": {
+   "test_date": "2025-03",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-asus-rog-flow-z13-2025-sieu-chip-cua-amd-danh-cho-di-dong-co-gi-dac-biet.3966435/",
+   "display": {
+     "size": 13.4,
+     "resolution": "2.5K",
+     "refresh_hz": 180
+   }
+ },
+ "tuf-a14-ryzen-7-350-radeon-8060s-laptop": {
+   "notes": "GB6 đa nhân 12693 là điểm tham khảo Tom's Guide (https://www.tomsguide.com/computing/gaming-laptops/asus-tuf-gaming-a14-2025-review, bản FA401KM Ryzen AI 7 350 + RTX 5060). Số cũ 7963 nhập nhầm từ PCMark 10. GPU RTX 5060 suy ra từ cấu hình FA401KM (chart bài ghi nhầm Radeon 8060S); id cũ còn chữ radeon-8060s."
+ }
 }
