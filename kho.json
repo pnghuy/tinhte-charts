@@ -904,10 +904,10 @@
    "type": "laptop"
   },
   "tuf-a14-ryzen-7-350-radeon-8060s-laptop": {
-   "cpu": "Ryzen 7 350",
-   "gpu": "Radeon 8060S",
+   "cpu": "Ryzen AI 7 350",
+   "gpu": "RTX 5060",
    "measured": true,
-   "name": "TUF A14",
+   "name": "TUF Gaming A14 2025",
    "scores": {
     "3dmark-time-spy": [
      10200
@@ -918,7 +918,7 @@
     ],
     "geekbench-6": [
      2810,
-     7963
+     12693
     ],
     "pcmark-10": [
      7963

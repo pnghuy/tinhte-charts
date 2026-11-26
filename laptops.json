@@ -349,5 +349,8 @@
      "resolution": "2.5K",
      "refresh_hz": 180
    }
+ },
+ "tuf-a14-ryzen-7-350-radeon-8060s-laptop": {
+   "notes": "GB6 đa nhân 12693 là điểm tham khảo Tom's Guide (https://www.tomsguide.com/computing/gaming-laptops/asus-tuf-gaming-a14-2025-review, bản FA401KM Ryzen AI 7 350 + RTX 5060). Số cũ 7963 nhập nhầm từ PCMark 10. GPU RTX 5060 suy ra từ cấu hình FA401KM (chart bài ghi nhầm Radeon 8060S); id cũ còn chữ radeon-8060s."
  }
 }
