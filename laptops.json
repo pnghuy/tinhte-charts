@@ -129,5 +129,116 @@
    "battery": {
      "wh": 77
    }
+ },
+ "msi-ge76-raider-core-i9-12900hk-rtx-3080-ti-laptop": {
+   "test_date": "2022-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-core-i9-12900hk-tren-ge76-raider-cpu-laptop-gio-qua-manh.3553640/",
+   "ram": "64GB",
+   "display": {
+     "size": 17.3,
+     "resolution": "3840 x 2160",
+     "refresh_hz": 120
+   },
+   "battery": {
+     "wh": 99.9
+   }
+ },
+ "razer-blade-15-2022-core-i7-12800h-rtx-3080-ti-110w-laptop": {
+   "test_date": "2022-09",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-bo-doi-razer-blade-14-amd-va-blade-15-intel-the-he-moi.3566931/",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 360,
+     "panel": "IPS",
+     "brightness": 340,
+     "srgb": 97,
+     "adobergb": 70
+   }
+ },
+ "razer-blade-14-2022-ryzen-9-6900hx-rtx-3080-ti-100w-laptop": {
+   "test_date": "2022-09",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-bo-doi-razer-blade-14-amd-va-blade-15-intel-the-he-moi.3566931/",
+   "ram": "16GB",
+   "display": {
+     "size": 14,
+     "resolution": "2560 x 1440",
+     "refresh_hz": 165,
+     "panel": "IPS",
+     "srgb": 100,
+     "adobergb": 86,
+     "dcip3": 97
+   }
+ },
+ "msi-alpha-15-ryzen-7-5800h-rx-6600m-laptop": {
+   "test_date": "2021-10",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-msi-alpha-15-mot-chiec-may-dat-chuan-amd-advantage-manh-me-rat-dang-de-xai.3414205/",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "brightness": 260,
+     "srgb": 93,
+     "adobergb": 63,
+     "contrast": "1000:1"
+   },
+   "battery": {
+     "wh": 90
+   }
+ },
+ "msi-pulse-gl66-core-i7-11800h-rtx-3050-ti-60w-laptop": {
+   "test_date": "2021-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-msi-pulse-gl66-rtx-3050-ti-se-cho-anh-em-choi-game-tot-toi-dau.3392897/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "srgb": 92,
+     "adobergb": 65
+   },
+   "battery": {
+     "wh": 52
+   }
+ },
+ "msi-bravo-15-ryzen-5-4600h-rx-5300m-laptop": {
+   "test_date": "2020-06",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-msi-bravo-15-chiec-laptop-7nm-voi-ryzen-4000-6-nhan-rx-5300m-hieu-nang-gia-qua-tot.3150171/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 60,
+     "panel": "IPS",
+     "srgb": 50
+   },
+   "battery": {
+     "wh": 51
+   }
+ },
+ "hp-zbook-firefly-14-g8-core-i5-1135g7-t500-laptop": {
+   "test_date": "2022-12",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/hp-zbook-firefly-14-g8-chiec-may-tram-di-dong-nho-gon-rat-dang-xai.3603288/",
+   "ram": "16GB",
+   "display": {
+     "size": 14,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 60,
+     "panel": "IPS",
+     "brightness": 400,
+     "srgb": 99,
+     "adobergb": 70,
+     "contrast": "1000:1"
+   },
+   "battery": {
+     "wh": 53
+   }
  }
 }
