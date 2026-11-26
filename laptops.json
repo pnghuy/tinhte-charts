@@ -1,24 +1,133 @@
 {
  "_note": "Thông tin thêm cho web Tinh tế Laptop Lab, khoá là id máy trong kho.json. Điểm benchmark vẫn nằm trong kho.json. Mẫu đầy đủ các trường (màn hình, pin, link bài, ảnh…): templates/sample-laptop-metadata.json trong repo pnghuy/PC-data-manager. \"hidden\": true để ẩn thẻ máy; \"show\": true để hiện thẻ cho máy chỉ có số tham khảo.",
- "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {
-  "test_date": "2026-11",
-  "tester": "pnghuy",
-  "ram": "16GB"
- },
+ "acer-nitro-propanel-anv16-core-5-205h-rtx-3050-65w-laptop": {"test_date": "2026-11", "tester": "pnghuy", "ram": "16GB"},
  "asus-proart-p16-rtx-spark-n1x-laptop-ref": {
-  "test_date": "2026-11",
-  "show": true
+   "test_date": "2026-11",
+   "show": true,
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-proart-p16-rtx-spark-n1x-khi-nvidia-bat-dau-viet-lai-dinh-nghia-ve-may-tinh-ca-nhan.4192385/",
+   "ram": "128GB"
  },
- "asus-vivobook-s16-snapdragon-x-laptop": { "test_date": "2026-10" },
- "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
- "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": { "test_date": "2026-10" },
- "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-3050-65w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-4050-75w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-rtx-5050-75w-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-core-7-240h-laptop": { "test_date": "2026-08" },
- "acer-nitro-propanel-core-i5-13420h-laptop": { "test_date": "2026-08" },
- "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": { "test_date": "2026-07" },
- "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": { "test_date": "2026-07" },
- "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": { "test_date": "2026-07" }
+ "asus-vivobook-s16-snapdragon-x-laptop": {
+   "test_date": "2026-10",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-vivobook-s16-s5608qa-26-trieu-cho-chiec-may-nay-thi-qua-ngon.4182508/",
+   "ram": "16GB"
+ },
+ "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": {
+   "test_date": "2026-10",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-14-oled-ux3480aa-2026-zenbook-da-lot-xac-hoan-toan.4186762/",
+   "battery": {
+     "wh": 70
+   }
+ },
+ "hp-omnibook-x-flip-14-ultra-5-325-intel-graphics-4-xe3-laptop": {"test_date": "2026-10"},
+ "zenbook-a16-snapdragon-x2-elite-extreme-adreno-x2-90-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-a16-chip-manh-nhat-cua-qualcomm-tren-laptop-van-bi-phan-mem-kim-ham.4174373/",
+   "ram": "24GB"
+ },
+ "acer-nitro-propanel-rtx-3050-65w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-rtx-4050-75w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-rtx-5050-75w-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-core-7-240h-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "acer-nitro-propanel-core-i5-13420h-laptop": {
+   "test_date": "2026-08",
+   "review_url": "https://tinhte.vn/thread/back-to-school-danh-gia-acer-nitro-propanel-laptop-gaming-quoc-dan-quay-lai-va-co-loi-hai-hon.4158616/"
+ },
+ "strix-scar-18-2026-core-ultra-9-290hx-plus-rtx-5090-175w-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-rog-strix-scar-18-2026-laptop-manh-nhat-cua-rog-nang-cap-ram-va-ssd-cuc-de.4164328/",
+   "battery": {
+     "wh": 90
+   }
+ },
+ "thinkpad-x1-carbon-gen-14-ultra-x7-368h-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-lenovo-thinkpad-x1-carbon-gen-14-quiet-luxury.4159926/",
+   "ram": "64GB",
+   "battery": {
+     "wh": 58
+   },
+   "display": {
+     "size": 14,
+     "resolution": "2.8K",
+     "refresh_hz": 120,
+     "panel": "OLED"
+   }
+ },
+ "zephyrus-duo-ultra-9-386h-rtx-5090-150w-laptop": {
+   "test_date": "2026-07",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zephyrus-duo-2-man-hinh-200-trieu-ban-can-gi-o-no.4156681/",
+   "battery": {
+     "wh": 90
+   }
+ },
+ "expertbook-ultra-ultra-x7-358h-intel-arc-b390-laptop": {
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-expertbook-ultra-day-co-the-la-chiec-ultrabook-end-game-ma-ban-dang-tim-kiem.4145110/",
+   "test_date": "2026-05",
+   "ram": "32GB"
+ },
+ "zenbook-a14-snapdragon-x2-elite-laptop": {
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-a14-hieu-nang-ngon-may-rat-nhe-nhung-co-2-diem-anh-em-can-luu-y.4150307/",
+   "test_date": "2026-06",
+   "battery": {
+     "wh": 70
+   }
+ },
+ "macbook-neo-laptop": {
+   "test_date": "2026-03",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/danh-gia-macbook-neo-dung-fomo-hay-tinh-tao.4133427/",
+   "ram": "8GB",
+   "display": {
+     "size": 13,
+     "resolution": "2408 x 1506",
+     "refresh_hz": 60,
+     "panel": "IPS LCD",
+     "brightness": 538,
+     "srgb": 96,
+     "adobergb": 71,
+     "dcip3": 71,
+     "deltae": 1.44
+   },
+   "battery": {
+     "wh": 36.5
+   }
+ },
+ "crosshair-16-max-hx-core-ultra-9-290hx-plus-laptop": {
+   "test_date": "2026-07",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/tren-tay-msi-crosshair-16-max-hx-2026-man-hinh-rat-dep-rtx-5070-12gb-tan-nhiet-ngon.4160947/",
+   "ram": "32GB",
+   "display": {
+     "size": 16,
+     "resolution": "2560 x 1600",
+     "panel": "OLED",
+     "brightness": 487.9,
+     "srgb": 100,
+     "adobergb": 86,
+     "dcip3": 97,
+     "deltae": 0.61,
+     "contrast": "8230:1"
+   }
+ },
+ "asus-zenbook-s-14-2026-ultra-9-386h-laptop": {
+   "test_date": "2026-04",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-zenbook-s14-oled-2026-manh-hon-don-gian-hon-pin-van-tuyet-voi.4124647/",
+   "battery": {
+     "wh": 77
+   }
+ }
 }

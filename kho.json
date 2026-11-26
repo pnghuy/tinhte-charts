@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-20",
+ "updated": "2026-11-27",
  "note": "Kho máy so sánh của Tinhte Chart Studio. Chart Studio đọc/ghi file này qua GitHub. Sửa tay thì giữ đúng format.",
  "tests": {
   "ai-local-decode-qwen3-8-27b-qwen3-6-35b": {
@@ -420,13 +420,25 @@
   },
   "crosshair-16-max-hx-core-ultra-9-290hx-plus-laptop": {
    "cpu": "Core Ultra 9 290HX Plus",
-   "gpu": "",
+   "gpu": "RTX 5070 115W",
    "measured": true,
    "name": "Crosshair 16 Max HX",
    "scores": {
     "geekbench-6": [
      3200,
      21700
+    ],
+    "3dmark-time-spy": [
+     13871
+    ],
+    "3dmark-port-royal": [
+     8735
+    ],
+    "3dmark-fire-strike-extreme": [
+     16856
+    ],
+    "3dmark-steel-nomad": [
+     3001
     ]
    },
    "type": "laptop"
@@ -625,13 +637,17 @@
    "type": "laptop"
   },
   "macbook-neo-laptop": {
-   "cpu": "",
+   "cpu": "A18 Pro",
    "gpu": "",
    "measured": true,
    "name": "MacBook Neo",
    "scores": {
     "procyon-battery": [
      757
+    ],
+    "geekbench-6": [
+     3537,
+     8689
     ]
    },
    "type": "laptop"
@@ -1142,6 +1158,22 @@
     ],
     "pcmark-10": [
      9589
+    ]
+   },
+   "type": "laptop"
+  },
+  "asus-zenbook-s-14-2026-ultra-9-386h-laptop": {
+   "cpu": "Ultra 9 386H",
+   "gpu": "",
+   "measured": true,
+   "name": "ASUS Zenbook S 14 2026",
+   "scores": {
+    "cinebench-2024": [
+     111,
+     736
+    ],
+    "pcmark-10": [
+     6731
     ]
    },
    "type": "laptop"
