@@ -10,7 +10,13 @@
  "asus-vivobook-s16-snapdragon-x-laptop": {
    "test_date": "2026-10",
    "review_url": "https://tinhte.vn/thread/danh-gia-asus-vivobook-s16-s5608qa-26-trieu-cho-chiec-may-nay-thi-qua-ngon.4182508/",
-   "ram": "16GB"
+   "ram": "16GB",
+   "display": {
+     "brightness": 400,
+     "srgb": 98,
+     "adobergb": 76,
+     "dcip3": 75
+   }
  },
  "zenbook-14-ux3480aa-core-ultra-9-386h-intel-graphics-4-xe3-laptop": {
    "test_date": "2026-10",
@@ -71,7 +77,8 @@
    "review_url": "https://tinhte.vn/thread/danh-gia-asus-zephyrus-duo-2-man-hinh-200-trieu-ban-can-gi-o-no.4156681/",
    "battery": {
      "wh": 90
-   }
+   },
+   "notes": "GB6 đa nhân 17015 là điểm tham khảo XDA (https://www.xda-developers.com/review-asus-zephyrus-duo-2026/); tbreak đo 17029. Số cũ 9568 nhập nhầm từ PCMark 10."
  },
  "expertbook-ultra-ultra-x7-358h-intel-arc-b390-laptop": {
    "review_url": "https://tinhte.vn/thread/danh-gia-asus-expertbook-ultra-day-co-the-la-chiec-ultrabook-end-game-ma-ban-dang-tim-kiem.4145110/",
@@ -321,6 +328,26 @@
      "size": 13.3,
      "refresh_hz": 60,
      "panel": "AMOLED"
+   }
+ },
+ "zephyrus-g16-ultra-9-386h-rtx-5090-160w-laptop": {
+   "notes": "GB6 đa nhân 16960 là điểm tham khảo Tom's Guide (https://www.tomsguide.com/computing/gaming-laptops/asus-rog-zephyrus-g16-2026-review, bản RTX 5080, cùng Ultra 9 386H). Số cũ 9589 nhập nhầm từ PCMark 10."
+ },
+ "razer-blade-16-ryzen-ai-9-hx-370-rtx-5090-175w-laptop": {
+   "notes": "GB6 đa nhân 15671 là điểm tham khảo Notebookcheck (https://www.notebookcheck.net/2026-Razer-Blade-16-trades-away-AMD-for-Intel-with-great-results.1303680.0.html); Tom's Hardware 16025, XDA 15531. Số cũ 8113 nhập nhầm từ PCMark 10."
+ },
+ "zenbook-duo-2026-ultra-9-386h-laptop": {
+   "notes": "Id cũ còn chữ 386H nhưng máy là Core Ultra X9 388H (anh xác nhận 27/11/2026). Điểm CPU/GPU từ bài Panther Lake 4125712."
+ },
+ "core-ultra-x9-388h-tinhte-do-laptop": {"hidden": true},
+ "asus-rog-flow-z13-2025-ryzen-ai-max-plus-395-radeon-8060s-laptop": {
+   "test_date": "2025-03",
+   "tester": "pnghuy",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-asus-rog-flow-z13-2025-sieu-chip-cua-amd-danh-cho-di-dong-co-gi-dac-biet.3966435/",
+   "display": {
+     "size": 13.4,
+     "resolution": "2.5K",
+     "refresh_hz": 180
    }
  }
 }
