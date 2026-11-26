@@ -40,6 +40,26 @@
    "title": "AI Local — Tốc độ Prefill",
    "unit": "token/s"
   },
+  "cinebench-r15": {
+   "cat": "cpu",
+   "series": [
+    "Đơn nhân",
+    "Đa nhân"
+   ],
+   "sub": "Điểm càng cao càng tốt",
+   "title": "Cinebench R15",
+   "unit": "điểm"
+  },
+  "cinebench-r20": {
+   "cat": "cpu",
+   "series": [
+    "Đơn nhân",
+    "Đa nhân"
+   ],
+   "sub": "Điểm càng cao càng tốt",
+   "title": "Cinebench R20",
+   "unit": "điểm"
+  },
   "cyberpunk-2077-1080p-low-settings": {
    "cat": "gpu",
    "series": null,
@@ -1202,6 +1222,14 @@
     ],
     "3dmark-time-spy-extreme": [
      6426
+    ],
+    "cinebench-r20": [
+     711,
+     6992
+    ],
+    "cinebench-r15": [
+     264,
+     2936
     ]
    },
    "type": "laptop"
@@ -1230,6 +1258,14 @@
     ],
     "3dmark-time-spy-extreme": [
      5113
+    ],
+    "cinebench-r20": [
+     655,
+     5543
+    ],
+    "cinebench-r15": [
+     245,
+     2563
     ]
    },
    "type": "laptop"
@@ -1258,6 +1294,14 @@
     ],
     "3dmark-time-spy-extreme": [
      5026
+    ],
+    "cinebench-r20": [
+     608,
+     5462
+    ],
+    "cinebench-r15": [
+     247,
+     2318
     ]
    },
    "type": "laptop"
@@ -1276,6 +1320,14 @@
     ],
     "3dmark-port-royal": [
      2952
+    ],
+    "cinebench-r20": [
+     546,
+     4579
+    ],
+    "cinebench-r15": [
+     228,
+     1994
     ]
    },
    "type": "laptop"
@@ -1291,6 +1343,14 @@
     ],
     "3dmark-time-spy": [
      4970
+    ],
+    "cinebench-r20": [
+     567,
+     4544
+    ],
+    "cinebench-r15": [
+     224,
+     1808
     ]
    },
    "type": "laptop"
@@ -1303,6 +1363,14 @@
    "scores": {
     "pcmark-10": [
      5464
+    ],
+    "cinebench-r20": [
+     439,
+     3318
+    ],
+    "cinebench-r15": [
+     171,
+     1430
     ]
    },
    "type": "laptop"
@@ -1315,6 +1383,120 @@
    "scores": {
     "pcmark-10": [
      4708
+    ],
+    "cinebench-r20": [
+     508,
+     1728
+    ],
+    "cinebench-r15": [
+     194,
+     821
+    ]
+   },
+   "type": "laptop"
+  },
+  "asus-rog-zephyrus-m15-core-i7-10750h-gtx-1660-ti-laptop": {
+   "cpu": "Core i7-10750H",
+   "gpu": "GTX 1660 Ti",
+   "measured": true,
+   "name": "ASUS ROG Zephyrus M15",
+   "scores": {
+    "cinebench-r20": [
+     451,
+     2986
+    ]
+   },
+   "type": "laptop"
+  },
+  "msi-gs66-stealth-core-i7-10750h-rtx-2060-laptop": {
+   "cpu": "Core i7-10750H",
+   "gpu": "RTX 2060",
+   "measured": true,
+   "name": "MSI GS66 Stealth",
+   "scores": {
+    "cinebench-r20": [
+     444,
+     2804
+    ]
+   },
+   "type": "laptop"
+  },
+  "dell-precision-5550-core-i7-10750h-quadro-t1000-laptop": {
+   "cpu": "Core i7-10750H",
+   "gpu": "Quadro T1000",
+   "measured": true,
+   "name": "Dell Precision 5550",
+   "scores": {
+    "cinebench-r20": [
+     466,
+     2856
+    ],
+    "cinebench-r15": [
+     187,
+     1254
+    ]
+   },
+   "type": "laptop"
+  },
+  "dell-precision-5750-core-i7-10750h-quadro-rtx-3000-max-q-laptop": {
+   "cpu": "Core i7-10750H",
+   "gpu": "Quadro RTX 3000 Max-Q",
+   "measured": true,
+   "name": "Dell Precision 5750",
+   "scores": {
+    "cinebench-r20": [
+     467,
+     3070
+    ],
+    "cinebench-r15": [
+     198,
+     1325
+    ]
+   },
+   "type": "laptop"
+  },
+  "hp-envy-15-2020-core-i7-10750h-gtx-1660-ti-laptop": {
+   "cpu": "Core i7-10750H",
+   "gpu": "GTX 1660 Ti",
+   "measured": true,
+   "name": "HP Envy 15 2020",
+   "scores": {
+    "cinebench-r20": [
+     461,
+     3194
+    ]
+   },
+   "type": "laptop"
+  },
+  "hp-pavilion-gaming-15-ryzen-5-4600h-gtx-1650-laptop": {
+   "cpu": "Ryzen 5 4600H",
+   "gpu": "GTX 1650",
+   "measured": true,
+   "name": "HP Pavilion Gaming 15",
+   "scores": {
+    "cinebench-r20": [
+     403,
+     3161
+    ]
+   },
+   "type": "laptop"
+  },
+  "samsung-galaxy-book2-360-13-core-i7-1255u-iris-xe-laptop": {
+   "cpu": "Core i7-1255U",
+   "gpu": "Iris Xe (96 EU)",
+   "measured": true,
+   "name": "Samsung Galaxy Book2 360 13",
+   "scores": {
+    "cinebench-r20": [
+     547,
+     2262
+    ],
+    "cinebench-r15": [
+     203,
+     1092
+    ],
+    "pcmark-10": [
+     3885
     ]
    },
    "type": "laptop"

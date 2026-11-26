@@ -240,5 +240,87 @@
    "battery": {
      "wh": 53
    }
+ },
+ "asus-rog-zephyrus-m15-core-i7-10750h-gtx-1660-ti-laptop": {
+   "test_date": "2020-10",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-asus-rog-zephyrus-m15-chiec-laptop-gaming-mong-ma-minh-dang-xai.3205875/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 240,
+     "panel": "IPS",
+     "brightness": 280,
+     "srgb": 97
+   }
+ },
+ "msi-gs66-stealth-core-i7-10750h-rtx-2060-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-nhanh-gs66-stealth-thiet-ke-moi-hoan-thien-tot-hon-hieu-nang-on.3176342/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 240,
+     "panel": "IPS"
+   },
+   "battery": {
+     "wh": 99.9
+   }
+ },
+ "dell-precision-5550-core-i7-10750h-quadro-t1000-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-so-precision-5550-vs-5750-cung-cpu-nhung-khac-tan-nhiet-khac-hieu-nang-rtx-3000-manh.3173338/",
+   "battery": {
+     "wh": 86
+   }
+ },
+ "dell-precision-5750-core-i7-10750h-quadro-rtx-3000-max-q-laptop": {
+   "test_date": "2020-08",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-so-precision-5550-vs-5750-cung-cpu-nhung-khac-tan-nhiet-khac-hieu-nang-rtx-3000-manh.3173338/"
+ },
+ "hp-envy-15-2020-core-i7-10750h-gtx-1660-ti-laptop": {
+   "test_date": "2020-12",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/chia-se-ve-chiec-envy-15-2020-cai-minh-thich-va-chua-thich-hieu-nang-va-man-hinh.3232955/",
+   "ram": "16GB",
+   "display": {
+     "size": 15.6,
+     "refresh_hz": 60,
+     "brightness": 334,
+     "srgb": 99,
+     "adobergb": 78,
+     "contrast": "940:1"
+   }
+ },
+ "hp-pavilion-gaming-15-ryzen-5-4600h-gtx-1650-laptop": {
+   "test_date": "2020-11",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/trai-nghiem-hp-pavilion-gaming-15-chay-amd-ryzen-dang-tung-xu.3219632/",
+   "ram": "8GB",
+   "display": {
+     "size": 15.6,
+     "resolution": "1920 x 1080",
+     "refresh_hz": 144,
+     "panel": "IPS"
+   },
+   "battery": {
+     "wh": 52.5
+   }
+ },
+ "samsung-galaxy-book2-360-13-core-i7-1255u-iris-xe-laptop": {
+   "test_date": "2023-01",
+   "tester": "bk9sw",
+   "review_url": "https://tinhte.vn/thread/danh-gia-samsung-galaxy-book2-360-13-laptop-cua-samsung-xai-rat-duoc.3628568/",
+   "ram": "16GB",
+   "display": {
+     "size": 13.3,
+     "refresh_hz": 60,
+     "panel": "AMOLED"
+   }
  }
 }
