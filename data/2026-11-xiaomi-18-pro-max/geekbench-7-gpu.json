@@ -1,0 +1,10 @@
+{
+  "title": "Geekbench 7 GPU",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "items": [
+    { "name": "Xiaomi 18 Pro Max (Adreno 850)", "value": 22869, "color": "#E53935", "highlight": true }
+  ]
+}

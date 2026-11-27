@@ -1,0 +1,10 @@
+{
+  "title": "3DMark Solar Bay Extreme",
+  "subtitle": "Điểm càng cao càng tốt · Xiaomi 18 Pro Max: 11,99 FPS",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "items": [
+    { "name": "Xiaomi 18 Pro Max (Adreno 850)", "value": 1714, "color": "#E53935", "highlight": true }
+  ]
+}

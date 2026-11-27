@@ -1,0 +1,19 @@
+{
+  "title": "3DMark Steel Nomad Light",
+  "subtitle": "Điểm càng cao càng tốt · Xiaomi 18 Pro Max: 24,37 FPS",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Overall Score"],
+  "seriesColors": ["#FF8C00"],
+
+  "items": [
+    { "name": "Xiaomi 18 Pro Max (Adreno 850)", "values": [3289], "highlight": true },
+    { "name": "ASUS Vivobook S14 (Radeon 890M)", "values": [6244] },
+    { "name": "ASUS ExpertBook Ultra (Intel Arc B390)", "values": [6095] },
+    { "name": "ASUS Zenbook A16 (Adreno X2-90)", "values": [4450] },
+    { "name": "ASUS Zenbook 14 (Radeon 780M)", "values": [2760] },
+    { "name": "ASUS Zenbook 14 (Intel Arc, 7 Xe)", "values": [2610] },
+    { "name": "ASUS Vivobook S16 (Adreno X1-45)", "values": [1750] }
+  ]
+}
