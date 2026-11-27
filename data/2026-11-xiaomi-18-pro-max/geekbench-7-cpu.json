@@ -1,0 +1,17 @@
+{
+  "title": "Geekbench 7 CPU",
+  "subtitle": "Điểm càng cao càng tốt",
+  "unit": "điểm",
+  "source": "Nguồn: Tinhte.vn đo thực tế",
+
+  "series": ["Đơn nhân", "Đa nhân"],
+  "seriesColors": ["#0088CC", "#6CBE45"],
+
+  "items": [
+    { "name": "Xiaomi 18 Pro Max (Snapdragon 8 Elite Extreme Gen 6)", "values": [2851, 9875], "highlight": true },
+    { "name": "ASUS Zenbook 14 (Ryzen 7 8840U)", "values": [2290, 10350] },
+    { "name": "Acer Nitro ProPanel ANV16 (Core 5 205H)", "values": [2154, 9388] },
+    { "name": "ASUS Zenbook 14 (Core Ultra 5 125H)", "values": [2180, 9250] },
+    { "name": "ASUS Vivobook S16 (Snapdragon X)", "values": [1655, 8768] }
+  ]
+}
